@@ -1,0 +1,100 @@
+{
+  "queries": [
+    {
+      "id": "F020",
+      "question": "What is bibimbap, and what does it consist of?"
+    },
+    {
+      "id": "I012",
+      "question": "How does Baijiu differ from Japanese shōchū and Korean soju?"
+    },
+    {
+      "id": "I007",
+      "question": "What is the history behind the use of soybeans in Korean doenjang?"
+    },
+    {
+      "id": "M002",
+      "question": "How is tofu used differently across Chinese, Japanese, and Korean cuisines?"
+    },
+    {
+      "id": "F004",
+      "question": "What is the traditional cooking method of Dorayaki?"
+    },
+    {
+      "id": "I023",
+      "question": "What does the term 'antipasto' mean in Italian cuisine?"
+    },
+    {
+      "id": "M001",
+      "question": "How are fermentation techniques used across East Asian cuisines?"
+    },
+    {
+      "id": "C002",
+      "question": "What are the key differences between Chinese, Japanese, and Korean cuisine?"
+    },
+    {
+      "id": "F025",
+      "question": "How do you prepare a focaccia for an Italian meal?"
+    },
+    {
+      "id": "P008",
+      "question": "How does bento differ from traditional Japanese meals?"
+    },
+    {
+      "id": "I018",
+      "question": "What are the main components of Bibimbap?"
+    },
+    {
+      "id": "P003",
+      "question": "How does Beijing cuisine differ from other Chinese cuisines?"
+    },
+    {
+      "id": "F003",
+      "question": "How many cultivars of glutinous rice exist? What do they differ from non-glutinous strains?"
+    },
+    {
+      "id": "F023",
+      "question": "How did the Finnish language compare to other European and West-Asian languages?"
+    },
+    {
+      "id": "I004",
+      "question": "What are some key components of Chinese cuisine?"
+    },
+    {
+      "id": "I014",
+      "question": "What are the main ingredients of Fried Rice?"
+    },
+    {
+      "id": "P014",
+      "question": "How does Nattō get its unique flavor?"
+    },
+    {
+      "id": "I016",
+      "question": "What are the components of Kimchi?"
+    },
+    {
+      "id": "I017",
+      "question": "What are the typical methods used to ferment Kimchi?"
+    },
+    {
+      "id": "P031",
+      "question": "How does the use of imported ingredients affect the taste of traditional Chinese-American dishes?"
+    },
+    {
+      "id": "I008",
+      "question": "What are some common ingredients in miso soup?"
+    },
+    {
+      "id": "CU018",
+      "question": "What does kimchi production involve?"
+    },
+    {
+      "id": "CU002",
+      "question": "What is the main ingredient of glutinous rice?"
+    },
+    {
+      "id": "P015",
+      "question": "How do you prepare donburi?"
+    }
+  ]
+}

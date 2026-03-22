@@ -1,0 +1,46 @@
+# =============================================================================
+# .gitignore — RAG Culinary Assistant
+# =============================================================================
+
+# Environment
+.env
+venv/
+env/
+rag-project/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Large model/data files — do not commit these
+vector_store/index.faiss
+vector_store/chunks.pkl
+vector_store/bm25.pkl
+data/raw/
+data/processed/
+
+# Keep these small metadata files
+!vector_store/metadata.json
+!data/benchmark/
+!data/raw/corpus_manifest.json
+
+# Output files
+outputs/train_outputs.json
+outputs/evaluation/
+output_payload.json
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

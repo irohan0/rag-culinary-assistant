@@ -1,0 +1,1067 @@
+{
+  "created_at": "2026-03-22T09:47:56.983670",
+  "cuisine": "East Asian",
+  "generation_method": "LLM-assisted (Qwen2.5-0.5B-Instruct) + manual comparative/multi-hop pairs",
+  "total_pairs": 116,
+  "train_pairs": 92,
+  "test_pairs": 24,
+  "type_distribution": {
+    "cultural": 29,
+    "procedural": 31,
+    "comparative": 3,
+    "ingredient": 25,
+    "factual": 26,
+    "multi-hop": 2
+  },
+  "difficulty_distribution": {
+    "medium": 41,
+    "easy": 33,
+    "hard": 42
+  },
+  "qa_pairs": [
+    {
+      "question": "When did sushi begin to evolve into its current form?",
+      "answer": "Around the 14th and 16th centuries, rice vinegar started to be added to the rice to help speed up the process which took several months.",
+      "type": "cultural",
+      "difficulty": "medium",
+      "source_title": "Cookbook:Sushi",
+      "id": "CU015",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "What event marked the beginning of Finland's occupation by other countries?",
+      "answer": "The Coexistence of these two languages is perhaps stranger than it would first appear, as Finnish belongs to an entirely different language group (Uralic) than virtually all other European and West-Asian languages, collectively termed Indo-European.",
+      "type": "procedural",
+      "difficulty": "easy",
+      "source_title": "77. Finland",
+      "id": "P028",
+      "source_doc_type": "blog"
+    },
+    {
+      "id": "C001",
+      "question": "How does Chinese hot pot differ from Japanese shabu-shabu?",
+      "answer": "Chinese hot pot uses richly spiced broths (often split spicy and mild) with diverse ingredients including offal and fish balls. Japanese shabu-shabu uses a delicate kombu broth and focuses on thinly sliced high-quality beef dipped briefly and eaten with ponzu or sesame sauce. Shabu-shabu is more restrained while hot pot is more varied.",
+      "type": "comparative",
+      "difficulty": "medium",
+      "source_title": "Hot pot",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "How does deep frying work?",
+      "answer": "Deep frying involves food being submerged in hot fat, typically lard or oil, as opposed to shallow frying used in traditional frying methods.",
+      "type": "procedural",
+      "difficulty": "easy",
+      "source_title": "Deep frying",
+      "id": "P012",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What is the traditional method of preparing duck dishes in Beijing cuisine?",
+      "answer": "In Beijing cuisine, duck dishes are often prepared using various methods including deep-frying, stir-frying, and braising.",
+      "type": "ingredient",
+      "difficulty": "easy",
+      "source_title": "Beijing cuisine",
+      "id": "I001",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "How is Bibimbap typically prepared?",
+      "answer": "Bibimbap is traditionally prepared using steamed white rice topped with vegetables, beef (often tofu or chicken), a whole egg, and gochujang.",
+      "type": "procedural",
+      "difficulty": "medium",
+      "source_title": "Cookbook:Bibimbap",
+      "id": "P027",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "What period of time did Finland become a Grand Duchy of Russia?",
+      "answer": "During its occupation by other countries, local Finnish people were relegated to peasants and slaves.",
+      "type": "factual",
+      "difficulty": "medium",
+      "source_title": "77. Finland",
+      "id": "F022",
+      "source_doc_type": "blog"
+    },
+    {
+      "question": "How does glutinous rice differ from non-glutinous rice?",
+      "answer": "Glutinous rice differs from non-glutinous rice in that it has transparent grains and very low amylose content.",
+      "type": "cultural",
+      "difficulty": "hard",
+      "source_title": "Glutinous rice",
+      "id": "CU003",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What are some common customs associated with sake consumption?",
+      "answer": "Some common customs associated with sake consumption include being gently warmed in a small earthenware or porcelain bottle and sipped from a small porcelain cup called asakazuki.",
+      "type": "cultural",
+      "difficulty": "medium",
+      "source_title": "Sake",
+      "id": "CU001",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "When did sushi originate in Japan?",
+      "answer": "Around the 14th and 16th centuries, rice vinegar started to be added to the rice to help speed up the process which took several months. Around this time the rice also started to be consumed with the fish it was used to preserve.",
+      "type": "cultural",
+      "difficulty": "medium",
+      "source_title": "Cookbook:Sushi",
+      "id": "CU016",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "What is the process of making bento?",
+      "answer": "To make bento, you first prepare a variety of dishes using dried rice, then package them in a container and cover with a lid.",
+      "type": "procedural",
+      "difficulty": "hard",
+      "source_title": "Bento",
+      "id": "P009",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What is the origin of the name 'callaloo'?",
+      "answer": "In some parts of the Caribbean, callaloo is a thick fibrous dish more akin to collard greens.",
+      "type": "cultural",
+      "difficulty": "medium",
+      "source_title": "67. The Caribbean: Lesser Antilles",
+      "id": "CU028",
+      "source_doc_type": "blog"
+    },
+    {
+      "question": "How did the world's earliest eating establishments recognize restaurants in the modern sense?",
+      "answer": "Street food became an integral aspect of Chinese food culture in the 7th century during the Tang dynasty, and street food culture of much of Southeast Asia was established by workers imported from China during the late 19th century.",
+      "type": "factual",
+      "difficulty": "hard",
+      "source_title": "Chinese cuisine",
+      "id": "F009",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What is the name of the traditional Korean dish teokbokki?",
+      "answer": "Teokbokki is known by various names, including teokjjim, teok-japchae, teok-jeongol, short rib, sirloin, sesame oil, soy sauce, scallion, rock tripe, pine nuts, and toasted sesame seeds.",
+      "type": "factual",
+      "difficulty": "hard",
+      "source_title": "Tteokbokki",
+      "id": "F006",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What are some key ingredients in Italian cuisine?",
+      "answer": "Key ingredients in Italian cuisine include local varieties of cured meats and cheeses, marinated, stuffed or fresh produce such as olives, peppers, artichoke hearts, anchovies, and seafood like anchovies.",
+      "type": "ingredient",
+      "difficulty": "easy",
+      "source_title": "69. Northern Italy",
+      "id": "I022",
+      "source_doc_type": "blog"
+    },
+    {
+      "question": "How did bento become associated with carrying food outside the home in Japanese culture?",
+      "answer": "It was during the Azuchi-Momoyama period, when the term ‘bento’ was used with the meaning of ‘to prepare in advance for later use,’ a meaning unique to Japan.",
+      "type": "cultural",
+      "difficulty": "hard",
+      "source_title": "Bento",
+      "id": "CU010",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "How does sake differ from beer in its fermentation process?",
+      "answer": "Sake differs from beer in its fermentation process because the conversion from starch to sugar and then from sugar to alcohol occurs simultaneously during brewing.",
+      "type": "procedural",
+      "difficulty": "medium",
+      "source_title": "Sake",
+      "id": "P001",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What are some common fillings used in spring rolls in Southeast Asia?",
+      "answer": "Common fillings used in spring rolls in Southeast Asia include vegetables such as carrots, cabbage, green beans, bamboo shoots, banana heart, and leeks. Sometimes, minced meat (such as chicken, shrimp, pork, or beef) is also included.",
+      "type": "cultural",
+      "difficulty": "hard",
+      "source_title": "Spring roll",
+      "id": "CU005",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What are some of the most common ingredients used in sushi besides seafood?",
+      "answer": "Some common ingredients used in sushi besides seafood include sea vegetables, such as nori (seaweed sheets), cucumber, avocado, and eels.",
+      "type": "factual",
+      "difficulty": "medium",
+      "source_title": "Sushi",
+      "id": "F014",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What is the historical origin of deep frying?",
+      "answer": "Early records and cookbooks suggest that the practice began in certain European countries before other countries adopted the practice.",
+      "type": "cultural",
+      "difficulty": "easy",
+      "source_title": "Deep frying",
+      "id": "CU011",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "How did Beijing cuisine influence other Chinese cuisines?",
+      "answer": "Beijing cuisine has itself, in turn, also greatly influenced other Chinese cuisines, particularly the cuisine of Liaoning, the Chinese imperial cuisine, and the Chinese aristocrat cuisine.",
+      "type": "factual",
+      "difficulty": "hard",
+      "source_title": "Beijing cuisine",
+      "id": "F011",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What spices are typically used in Fried Rice?",
+      "answer": "The key spices used in Fried Rice include black pepper, chili pepper, and fried rice spice.",
+      "type": "procedural",
+      "difficulty": "hard",
+      "source_title": "Cookbook:Fried Rice",
+      "id": "P024",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "What traditional influences have shaped Beijing cuisine?",
+      "answer": "Beijing cuisine has itself, in turn, also greatly influenced other Chinese cuisines, particularly the cuisine of Liaoning, the Chinese imperial cuisine, and the Chinese aristocrat cuisine.",
+      "type": "procedural",
+      "difficulty": "hard",
+      "source_title": "Beijing cuisine",
+      "id": "P011",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "How did Finnish people adapt to their new surroundings after the Finnish war?",
+      "answer": "Finnish people were relegated to peasants and slaves, with the upper class of the country speaking Swedish.",
+      "type": "cultural",
+      "difficulty": "hard",
+      "source_title": "77. Finland",
+      "id": "CU024",
+      "source_doc_type": "blog"
+    },
+    {
+      "question": "What is the historical background of Beijing cuisine?",
+      "answer": "As Beijing has been the capital of China for centuries, its cuisine is influenced by culinary traditions from all over China, but the style that has the greatest influence on Beijing cuisine is that of the eastern coastal province of Shandong.",
+      "type": "factual",
+      "difficulty": "easy",
+      "source_title": "Beijing cuisine",
+      "id": "F001",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "When did teokbokki first appear in literature?",
+      "answer": "In Siŭijŏnsŏ, a 19th-century cookbook, the dish was listed using the archaic spelling 'steokbokgi' (hiragana: ṭepyōji).",
+      "type": "cultural",
+      "difficulty": "hard",
+      "source_title": "Tteokbokki",
+      "id": "CU006",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "Which ingredients are typically used for Fried Rice?",
+      "answer": "The ingredients used for Fried Rice include cooked rice, bean sprouts, kidney beans, aromatics such as onion, shallot, scallion, garlic, black pepper, chili pepper, fried rice spice, char siu (Chinese barbecue pork), marinated beef, seafood, and additional spices such as curry powder.",
+      "type": "cultural",
+      "difficulty": "hard",
+      "source_title": "Cookbook:Fried Rice",
+      "id": "CU020",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "What is the typical texture of callaloo soup?",
+      "answer": "The thickness and chunkiness of the soup is entirely determined by the preference of the cook, and can be made to match the desired accompaniment.",
+      "type": "cultural",
+      "difficulty": "hard",
+      "source_title": "67. The Caribbean: Lesser Antilles",
+      "id": "CU029",
+      "source_doc_type": "blog"
+    },
+    {
+      "question": "Why is kimchi often referred to as 'seasonal'?",
+      "answer": "Because kimchi is typically produced in response to traditional practices and the availability of certain ingredients.",
+      "type": "factual",
+      "difficulty": "medium",
+      "source_title": "Cookbook:Kimchi",
+      "id": "F018",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "When did sushi become associated with raw fish?",
+      "answer": "Around the 14th and 16th centuries, rice vinegar started to be added to the rice to help speed up the process.",
+      "type": "factual",
+      "difficulty": "hard",
+      "source_title": "Cookbook:Sushi",
+      "id": "F017",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "What are the main components of Baijiu?",
+      "answer": "Baijiu consists of grains (such as wheat, barley, rice, glutinous rice, Job's tears), fermented sorghum, and a specific type of starter qū used for fermentation.",
+      "type": "ingredient",
+      "difficulty": "medium",
+      "source_title": "Baijiu",
+      "id": "I011",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "How do you describe pickling?",
+      "answer": "Pickling refers to the process of preserving or extending the shelf life of food by either anaerobic fermentation in brine or immersion in vinegar.",
+      "type": "procedural",
+      "difficulty": "hard",
+      "source_title": "Pickling",
+      "id": "P017",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "id": "C003",
+      "question": "How does Cantonese cuisine differ from Sichuan cuisine?",
+      "answer": "Cantonese cuisine prioritises freshness and subtlety with light sauces to enhance natural flavours. Sichuan cuisine is defined by the bold mala flavour combination of Sichuan peppercorn and dried chilli, creating intense numbing heat. Cantonese cooking favours steaming and light stir-frying while Sichuan uses braising and heavy seasoning.",
+      "type": "comparative",
+      "difficulty": "medium",
+      "source_title": "Cantonese cuisine",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "How did Beijing cuisine have an impact on other Chinese cuisines?",
+      "answer": "Another tradition that influenced Beijing cuisine (as well as influenced by the latter itself) is the Chinese imperial cuisine that originated from the 'Emperor's Kitchen' (御膳房; yùshànfáng), which referred to the cooking facilities inside the Forbidden City, where thousands of cooks from different parts of China showed their best culinary skills to please the imperial family and officials.",
+      "type": "factual",
+      "difficulty": "medium",
+      "source_title": "Beijing cuisine",
+      "id": "F002",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "How do native tropical fruits and seafoods contribute to the cuisine of Guyana, Suriname, and French Guiana?",
+      "answer": "Native tropical fruits and seafoods are heavily incorporated into the diet, creating typically sweet, fruity dishes.",
+      "type": "factual",
+      "difficulty": "hard",
+      "source_title": "76. Guyana, Suriname and French Guiana",
+      "id": "F026",
+      "source_doc_type": "blog"
+    },
+    {
+      "question": "What is sushi, and what does it consist of?",
+      "answer": "Sushi is a traditional Japanese dish made with vinegared rice, typically seasoned with sugar and salt, and combining various ingredients such as seafood, vegetables, or meat.",
+      "type": "cultural",
+      "difficulty": "easy",
+      "source_title": "Sushi",
+      "id": "CU013",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What is the origin of bento in Japanese?",
+      "answer": "In Japanese, it was not originally called ‘bento’. The practice of carrying food and eating it outside the home can be found in historical texts such as the Kojiki and Nihon Shoki.",
+      "type": "cultural",
+      "difficulty": "easy",
+      "source_title": "Bento",
+      "id": "CU009",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What is the traditional method of preparation for Fried Rice?",
+      "answer": "The traditional method of preparation for Fried Rice involves frying leftover rice left over from refrigeration, which takes just five minutes.",
+      "type": "cultural",
+      "difficulty": "easy",
+      "source_title": "Cookbook:Fried Rice",
+      "id": "CU019",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "What are some common ingredients used in spring rolls?",
+      "answer": "Common ingredients include vegetables such as carrots, cabbage, green beans, bamboo shoots, banana heart, and leeks.",
+      "type": "factual",
+      "difficulty": "medium",
+      "source_title": "Spring roll",
+      "id": "F005",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "When did Chinese cuisine become an integral part of Chinese food culture?",
+      "answer": "The street food culture of much of Southeast Asia was established by workers imported from China during the late 19th century.",
+      "type": "procedural",
+      "difficulty": "medium",
+      "source_title": "Chinese cuisine",
+      "id": "P006",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "How long does fermented fish need to be stored before being used in sushi?",
+      "answer": "Fermented fish needs to be stored in fermented rice for possibly months at a time.",
+      "type": "procedural",
+      "difficulty": "medium",
+      "source_title": "Sushi",
+      "id": "P018",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What is the earliest recorded use of deep frying?",
+      "answer": "Early records suggest that deep frying started in certain European countries before other countries adopted the practice.",
+      "type": "procedural",
+      "difficulty": "medium",
+      "source_title": "Deep frying",
+      "id": "P013",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "How does sushi differ from other types of sushi?",
+      "answer": "Sushi differs from other types of sushi in that it is typically served with various toppings such as seafood and vegetables, unlike other types of sushi where the main ingredient is typically raw fish.",
+      "type": "procedural",
+      "difficulty": "easy",
+      "source_title": "Cookbook:Sushi",
+      "id": "P020",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "How does the preparation of the focaccia differ from its initial purpose?",
+      "answer": "It is made by combining bread flour, oil, water, salt, and yeast, then kneaded infinitely.",
+      "type": "procedural",
+      "difficulty": "hard",
+      "source_title": "69. Northern Italy",
+      "id": "P030",
+      "source_doc_type": "blog"
+    },
+    {
+      "question": "How do you make tendon?",
+      "answer": "Tendon is a dish made from pork instead of beef, usually in a mildly sweet sauce. However, it has become popular worldwide due to its unique flavor.",
+      "type": "procedural",
+      "difficulty": "medium",
+      "source_title": "Donburi",
+      "id": "P016",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What is the origin of sushi rice in Japan?",
+      "answer": "Sushi rice originated in Edo (modern Tokyo), where it was served alongside fish for the first time around the 17th century.",
+      "type": "ingredient",
+      "difficulty": "medium",
+      "source_title": "Cookbook:Sushi",
+      "id": "I013",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "What are some traditional cooking techniques used in Finnish cuisine?",
+      "answer": "Traditional cooking techniques used in Finnish cuisine include pickling, using natural ingredients, and preserving foods through methods like pickling.",
+      "type": "ingredient",
+      "difficulty": "hard",
+      "source_title": "77. Finland",
+      "id": "I021",
+      "source_doc_type": "blog"
+    },
+    {
+      "question": "What is the traditional method for making spring rolls?",
+      "answer": "Traditionally, they are a festive food eaten during the Cold Food Day festival and Tomb Sweeping Day festival in spring to remember and pay respect to ancestors.",
+      "type": "procedural",
+      "difficulty": "hard",
+      "source_title": "Spring roll",
+      "id": "P005",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What is the history of sushi?",
+      "answer": "The history of sushi dates back to ancient times when pickling fish using rice vinegar was common practice. Around the 14th and 16th centuries, rice vinegar was added to the rice to help speed up the fermentation process, which took several months. The addition of nori (red seaweed paper) around this time helped create the first ancestor of modern 'maki' sushi, or rolls. By the early 18th century, sushi restaurants began offering sushi rice with thin slices of fresh fish pressed into it, leading to the evolution of Edo-Mae sushi, which is also known as 'nigirizushi'.",
+      "type": "procedural",
+      "difficulty": "hard",
+      "source_title": "Cookbook:Sushi",
+      "id": "P021",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "What is the origin of spring rolls in Indonesia and the Philippines?",
+      "answer": "Lumpias the name for spring rolls in Indonesia and the Philippines, which was derived from Southern Chinese spring rolls.",
+      "type": "cultural",
+      "difficulty": "easy",
+      "source_title": "Spring roll",
+      "id": "CU004",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "How do you prepare dolsot bibimbap?",
+      "answer": "To prepare dolsot bibimbap, first boil matchsticks of carrot in a covered pot of salted water for a few minutes, then drain, rinse, and add sesame oil, sesame seeds, garlic, and salt.",
+      "type": "procedural",
+      "difficulty": "medium",
+      "source_title": "Cookbook:Bibimbap",
+      "id": "P026",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "What are the characteristics of kimchi?",
+      "answer": "Kimchi is a large group containing various types with some sources stating the existence of hundreds of varieties. It typically consists of salted fruits and vegetables, often seasoned with gochugaru (spice) and fermented seafood products.",
+      "type": "cultural",
+      "difficulty": "medium",
+      "source_title": "Cookbook:Kimchi",
+      "id": "CU017",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "When did sushi originate, and how did it evolve?",
+      "answer": "Sushi originated around 1824 in the Edo period (1603–1867), evolving into its current definition through the influence of Hanaya Yohei and changes in cooking techniques.",
+      "type": "cultural",
+      "difficulty": "medium",
+      "source_title": "Sushi",
+      "id": "CU014",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "How do Chinese dishes adapt to different regions and cultural backgrounds?",
+      "answer": "Dishes adapt to local palates and social classes through variations in seasoning and cooking methods. For example, spicy flavors may be favored in northern regions while sweet tastes are preferred in southern regions.",
+      "type": "ingredient",
+      "difficulty": "hard",
+      "source_title": "Chinese cuisine",
+      "id": "I005",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "How does kimchi differ from other pickled foods?",
+      "answer": "Kimchi is a class of pickled vegetables that differs from other pickled foods because it has a different flavor profile.",
+      "type": "procedural",
+      "difficulty": "medium",
+      "source_title": "Cookbook:Kimchi",
+      "id": "P025",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "What is the main ingredient in Callaloo?",
+      "answer": "callaloo is a popular dish in the Lesser Antilles and Trinidad and Tobago, consisting of a thick fibrous vegetable stewed with onions, garlic, scotch bonnet peppers, coconut milk, thyme, and okra.",
+      "type": "ingredient",
+      "difficulty": "medium",
+      "source_title": "67. The Caribbean: Lesser Antilles",
+      "id": "I024",
+      "source_doc_type": "blog"
+    },
+    {
+      "question": "When did the current shape of Dorayaki come into being?",
+      "answer": "The current shape of Dorayaki was invented in 1914 in the Ueno district of Tokyo.",
+      "type": "procedural",
+      "difficulty": "hard",
+      "source_title": "Dorayaki",
+      "id": "P004",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "How did the preparation of the focaccia contribute to the creation of the Antipasto course?",
+      "answer": "The preparation of the focaccia contributed to the creation of the Antipasto course by adding various ingredients such as olives, cheese, rosemary, or caramelized red onions.",
+      "type": "cultural",
+      "difficulty": "medium",
+      "source_title": "69. Northern Italy",
+      "id": "CU025",
+      "source_doc_type": "blog"
+    },
+    {
+      "question": "What traditional Korean dish does bibimbap refer to?",
+      "answer": "bibimbap is a traditional Korean meal consisting of a bowl of steamed white rice topped with various vegetables, beef (usually tofu or chicken), and gochujang.",
+      "type": "cultural",
+      "difficulty": "easy",
+      "source_title": "Cookbook:Bibimbap",
+      "id": "CU022",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "How does Baijiu differ from other East Asian liquors?",
+      "answer": "Baijiu differs from other East Asian liquors in terms of its solid-state fermentation and distillation process, using a grain culture called qū.",
+      "type": "factual",
+      "difficulty": "medium",
+      "source_title": "Baijiu",
+      "id": "F015",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "How does the fermentation time affect the flavor of miso soup?",
+      "answer": "Short fermentation produces a lighter, sweeter flavor, while longer fermentation gives the soup a stronger, deeper flavor.",
+      "type": "procedural",
+      "difficulty": "medium",
+      "source_title": "Miso soup",
+      "id": "P010",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "When did sushi begin to evolve into an artful, unique dining experience?",
+      "answer": "Around the 14th and 16th centuries, rice vinegar started to be added to the rice to help speed up the process which took several months.",
+      "type": "procedural",
+      "difficulty": "hard",
+      "source_title": "Cookbook:Sushi",
+      "id": "P019",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "What are some common dishes in Finnish cuisine?",
+      "answer": "Some common dishes in Finnish cuisine include sauerkraut, panna cotta, rye bread, and sourdough pizza.",
+      "type": "ingredient",
+      "difficulty": "easy",
+      "source_title": "77. Finland",
+      "id": "I020",
+      "source_doc_type": "blog"
+    },
+    {
+      "question": "How do you prepare Korean barbecue?",
+      "answer": "Before cooking, the meat is marinated with a mixture of soy sauce, sugar, ginger, scallions, sesame oil, garlic, and pepper. Pears are also traditionally used in the marinade to help tenderize the meat, but kiwi and pineapple have also been used more recently.",
+      "type": "procedural",
+      "difficulty": "medium",
+      "source_title": "Korean barbecue",
+      "id": "P007",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What is the primary source of influence for the cuisine in these countries?",
+      "answer": "The cuisine in these countries is a melting pot arising from the long history of colonialism from Europe, influences from other colonies of the same powers, Native American cuisine, neighboring regions and more recent immigration.",
+      "type": "cultural",
+      "difficulty": "easy",
+      "source_title": "76. Guyana, Suriname and French Guiana",
+      "id": "CU026",
+      "source_doc_type": "blog"
+    },
+    {
+      "question": "Which ingredients do I use if I don't have leftover rice?",
+      "answer": "If you don't have leftover rice, you can substitute it with cooked noodles or rice instead.",
+      "type": "ingredient",
+      "difficulty": "medium",
+      "source_title": "Cookbook:Fried Rice",
+      "id": "I015",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "What is sushi, and how does it differ from sashimi?",
+      "answer": "Sushi is a traditional Japanese dish made with vinegared rice, typically seasoned with sugar and salt, and combined with various ingredients such as seafood, vegetables, or meat. Unlike sashimi, sushi is typically eaten raw and not refrigerated, while sashimi is usually served chilled.",
+      "type": "factual",
+      "difficulty": "easy",
+      "source_title": "Sushi",
+      "id": "F013",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What is the origin of the Imperial Palace in Beijing?",
+      "answer": "The Imperial Palace in Beijing is named after the Forbidden City, which originally served as the residence of emperors and grandees.",
+      "type": "ingredient",
+      "difficulty": "hard",
+      "source_title": "Beijing cuisine",
+      "id": "I009",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What is the history of Beijing cuisine?",
+      "answer": "As Beijing has been the capital of China for centuries, its cuisine is influenced by culinary traditions from all over China, but the style that has the greatest influence on Beijing cuisine is that of the eastern coastal province of Shandong.",
+      "type": "procedural",
+      "difficulty": "easy",
+      "source_title": "Beijing cuisine",
+      "id": "P002",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What are some common ingredients used in Italian antipasti?",
+      "answer": "Antipasti in Italian cuisine typically include local varieties of cured meats and cheeses, marinated, stuffed or fresh produce such as olives, peppers, artichoke hearts, or seafood like anchovies.",
+      "type": "factual",
+      "difficulty": "easy",
+      "source_title": "69. Northern Italy",
+      "id": "F024",
+      "source_doc_type": "blog"
+    },
+    {
+      "question": "Which dish is traditionally made with tofu instead of pork in Beijing cuisine?",
+      "answer": "Tofu is commonly used in Beijing cuisine for making dishes such as Tofu Pancakes, Tofu Soup, and Tofu Baozi.",
+      "type": "ingredient",
+      "difficulty": "medium",
+      "source_title": "Beijing cuisine",
+      "id": "I002",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "When did deep frying begin in Europe?",
+      "answer": "Early records and cookbooks suggest that the practice began in certain European countries before other countries adopted the practice.",
+      "type": "factual",
+      "difficulty": "medium",
+      "source_title": "Deep frying",
+      "id": "F012",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "When did Korean barbecue become popular internationally?",
+      "answer": "During the 1990s and 2000s, it gained its global popularity through Hallyu, more commonly known as the 'Korean Wave', a term that describes the rise in popularity of Korean culture abroad during the 1990s and 2000s.",
+      "type": "cultural",
+      "difficulty": "hard",
+      "source_title": "Korean barbecue",
+      "id": "CU008",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "How do I prepare the ingredients for Fried Rice?",
+      "answer": "First, if using tofu, cook it; if using onions, dice them into whatever size you prefer; if using bok choy, separate the stalk part from the leaf part, slice the leaf part crosswise into ¾-inch-thick strips, and tear the strips into 2-inch pieces.",
+      "type": "procedural",
+      "difficulty": "easy",
+      "source_title": "Cookbook:Fried Rice",
+      "id": "P023",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "Why is the dish typically made vegetarian?",
+      "answer": "The dish is traditionally made vegetarian because it is known to have a spicy flavor.",
+      "type": "cultural",
+      "difficulty": "hard",
+      "source_title": "Cookbook:Bibimbap",
+      "id": "CU021",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "What significant event occurred in Finland's history?",
+      "answer": "Finland was part of the Swedish kingdom from the middle ages until periods of instability in the 18th century, ending with the Finnish war in 1809.",
+      "type": "cultural",
+      "difficulty": "easy",
+      "source_title": "77. Finland",
+      "id": "CU023",
+      "source_doc_type": "blog"
+    },
+    {
+      "question": "What is the origin of sushi?",
+      "answer": "Sushi originated in ancient Japan and has been a part of Japanese culture since the 7th century.",
+      "type": "factual",
+      "difficulty": "easy",
+      "source_title": "Cookbook:Sushi",
+      "id": "F016",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "How does the cuisine in these countries combine culinary aspects from India, Africa, Indonesia, China, The Netherlands, Portugal, Britain, The Caribbean, France and Spain?",
+      "answer": "All of this has culminated in a unique cuisine that is one of the most integrative that I've come across in my cooking adventures.",
+      "type": "cultural",
+      "difficulty": "hard",
+      "source_title": "76. Guyana, Suriname and French Guiana",
+      "id": "CU027",
+      "source_doc_type": "blog"
+    },
+    {
+      "question": "What are the common separators used in bento?",
+      "answer": "Green plastic 'sushi grass' known as baran is often used as a separator to prevent the spread of bacteria.",
+      "type": "ingredient",
+      "difficulty": "medium",
+      "source_title": "Bento",
+      "id": "I006",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "How does kimchi differ from regular pickled vegetables?",
+      "answer": "Kimchi differs from regular pickled vegetables because it is fermented and has additional flavors such as umami.",
+      "type": "procedural",
+      "difficulty": "easy",
+      "source_title": "Cookbook:Kimchi",
+      "id": "P022",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "What are some key ingredients commonly found in Chinese cuisine?",
+      "answer": "The key ingredients commonly found in Chinese cuisine include rice, soy sauce, noodles, tea, chili oil, tofu, and utensils such as chopsticks and the wok.",
+      "type": "factual",
+      "difficulty": "hard",
+      "source_title": "Chinese cuisine",
+      "id": "F008",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "How did the Upper Class of Finland Speak?",
+      "answer": "During its occupation by other countries, local Finnish people were relegated to peasants and slaves, with the upper class of the country speaking Swedish.",
+      "type": "procedural",
+      "difficulty": "hard",
+      "source_title": "77. Finland",
+      "id": "P029",
+      "source_doc_type": "blog"
+    },
+    {
+      "question": "What are the main ingredients used in Kimchi?",
+      "answer": "The main ingredients used in Kimchi include salted fruits and vegetables, often but not always seasoned with gochugaru (spice), and fermented seafood products.",
+      "type": "factual",
+      "difficulty": "easy",
+      "source_title": "Cookbook:Kimchi",
+      "id": "F019",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "What is the main source of glutinous rice?",
+      "answer": "The origin of glutinous rice is difficult to ascertain due to its long-standing cultural importance across a wide geographical region in Asia.",
+      "type": "ingredient",
+      "difficulty": "easy",
+      "source_title": "Glutinous rice",
+      "id": "I003",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What is the origin of bibimbap?",
+      "answer": "The exact origin of bibimbap is unclear, but it has been associated with Korea since ancient times.",
+      "type": "factual",
+      "difficulty": "hard",
+      "source_title": "Cookbook:Bibimbap",
+      "id": "F021",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "When did the records of the Three Kingdoms mention the use of doenjang?",
+      "answer": "The records mention it in the section named Dongyi (Eastern foreigners) in the Book of Wei.",
+      "type": "factual",
+      "difficulty": "medium",
+      "source_title": "Doenjang",
+      "id": "F010",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What is the difference between Dolsot Bibimbap and Namul Bibimbap?",
+      "answer": "Dolsot Bibimbap uses a very hot stoneware bowl to crisp the rice and cook the egg, while Namul Bibimbap uses a larger bowl and does not have a stoneware bowl.",
+      "type": "ingredient",
+      "difficulty": "medium",
+      "source_title": "Cookbook:Bibimbap",
+      "id": "I019",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "What was the historical significance of Chinese cuisine in influencing other cuisines?",
+      "answer": "Chinese cuisine has profoundly influenced other cuisines in Asia and beyond, with modifications made to cater to local palates.",
+      "type": "cultural",
+      "difficulty": "easy",
+      "source_title": "Chinese cuisine",
+      "id": "CU007",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "When did deep frying become popular worldwide?",
+      "answer": "Deep frying is popular worldwide, with deep-fried foods accounting for a large portion of global caloric consumption.",
+      "type": "cultural",
+      "difficulty": "medium",
+      "source_title": "Deep frying",
+      "id": "CU012",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "How does Nattō compare to other types of soybeans?",
+      "answer": "Nattō is often compared to other types of soybeans due to its powerful smell, strong flavor, and sticky, slimy texture.",
+      "type": "ingredient",
+      "difficulty": "medium",
+      "source_title": "Nattō",
+      "id": "I010",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What is the origin of Chinese cuisine?",
+      "answer": "Chinese cuisine originates from China, as well as from Chinese people from other parts of the world.",
+      "type": "factual",
+      "difficulty": "easy",
+      "source_title": "Chinese cuisine",
+      "id": "F007",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "Which country is known for making callaloo?",
+      "answer": "Trinidad and Tobago is famous for making callaloo, which is considered a national dish by many residents.",
+      "type": "ingredient",
+      "difficulty": "medium",
+      "source_title": "67. The Caribbean: Lesser Antilles",
+      "id": "I025",
+      "source_doc_type": "blog"
+    },
+    {
+      "question": "What is bibimbap, and what does it consist of?",
+      "answer": "Bibimbap is a traditional Korean meal consisting of a bowl of steamed white rice topped with various ingredients such as vegetables, beef (usually tofu or chicken), a whole egg, and gochujang (a spicy chili paste).",
+      "type": "factual",
+      "difficulty": "easy",
+      "source_title": "Cookbook:Bibimbap",
+      "id": "F020",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "How does Baijiu differ from Japanese shōchū and Korean soju?",
+      "answer": "Baijiu is characterized by solid-state fermentation and distillation using a grain culture called qū, allowing for simultaneous saccharification and fermentation. It is typically distilled from grain, produced in batches, and blended.",
+      "type": "ingredient",
+      "difficulty": "hard",
+      "source_title": "Baijiu",
+      "id": "I012",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What is the history behind the use of soybeans in Korean doenjang?",
+      "answer": "The Records of the Three Kingdoms mentions that 'Goguryeopople are good at brewing fermented soybeans' in the section named Dongyi in the Book of Wei.",
+      "type": "ingredient",
+      "difficulty": "hard",
+      "source_title": "Doenjang",
+      "id": "I007",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "id": "M002",
+      "question": "How is tofu used differently across Chinese, Japanese, and Korean cuisines?",
+      "answer": "In Chinese cooking, firm tofu is braised or cooked in spicy sauces like mapo tofu. In Japanese cuisine, silken tofu is served cold or in miso soup, while firm tofu appears in agedashi and hot pot. In Korean cuisine, soft tofu features in sundubu-jjigae stew and pan-fried dubu-jorim. China and Korea favour firmer varieties in cooked dishes while Japan often uses silken tofu.",
+      "type": "multi-hop",
+      "difficulty": "hard",
+      "source_title": "Tofu",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What is the traditional cooking method of Dorayaki?",
+      "answer": "Dorayaki consists of two small-packet-shaped patties made from cast iron wrapped around an filling of sweet azuki bean paste.",
+      "type": "factual",
+      "difficulty": "easy",
+      "source_title": "Dorayaki",
+      "id": "F004",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What does the term 'antipasto' mean in Italian cuisine?",
+      "answer": "Antipasto means 'before meal', referring to the first course of any formal Italian meal throughout the country.",
+      "type": "ingredient",
+      "difficulty": "medium",
+      "source_title": "69. Northern Italy",
+      "id": "I023",
+      "source_doc_type": "blog"
+    },
+    {
+      "id": "M001",
+      "question": "How are fermentation techniques used across East Asian cuisines?",
+      "answer": "Fermentation underpins all three major East Asian cuisines. Korean cuisine uses it for kimchi, doenjang, and gochujang. Japanese cuisine relies on it for miso, sake, soy sauce, and natto. Chinese cuisine uses it for doubanjiang, black bean paste, and Shaoxing wine. All three traditions developed fermentation as a preservation technique now prized for umami flavour.",
+      "type": "multi-hop",
+      "difficulty": "hard",
+      "source_title": "Fermentation in food processing",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "id": "C002",
+      "question": "What are the key differences between Chinese, Japanese, and Korean cuisine?",
+      "answer": "Chinese cuisine emphasises bold sauces and regional diversity across eight culinary traditions. Japanese cuisine prioritises minimalism, seasonality, and preserving natural flavours. Korean cuisine features bold fermented flavours, heavy use of chilli and garlic, and communal dining with banchan side dishes. All three centre rice and noodles but use distinct seasoning profiles.",
+      "type": "comparative",
+      "difficulty": "hard",
+      "source_title": "East Asian cuisine",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "How do you prepare a focaccia for an Italian meal?",
+      "answer": "To prepare a focaccia for an Italian meal, I chose the latter two ingredients (olive oil, cheese, rosemary, caramelized red onions) to flavor my focaccia dough, which was made by combining bread flour, oil, water, salt, and yeast.",
+      "type": "factual",
+      "difficulty": "hard",
+      "source_title": "69. Northern Italy",
+      "id": "F025",
+      "source_doc_type": "blog"
+    },
+    {
+      "question": "How does bento differ from traditional Japanese meals?",
+      "answer": "Traditional Japanese meals include rice, noodles, fish, and other meats, while bento focuses on preparing food outside the home using dried rice.",
+      "type": "procedural",
+      "difficulty": "medium",
+      "source_title": "Bento",
+      "id": "P008",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What are the main components of Bibimbap?",
+      "answer": "The main components of Bibimbap include white rice, vegetables, beef (often tofu or chicken), gochujang (spicy chili paste), and garnishes such as sesame oil, sesame seeds, garlic, salt, and soy sauce.",
+      "type": "ingredient",
+      "difficulty": "easy",
+      "source_title": "Cookbook:Bibimbap",
+      "id": "I018",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "How does Beijing cuisine differ from other Chinese cuisines?",
+      "answer": "It differs from other Chinese cuisines in that it originates from the Eastern Coastal Province of Shandong and influences other Chinese cuisines such as Liaoning, Imperial Cuisine, and Aristocratic Cuisine.",
+      "type": "procedural",
+      "difficulty": "medium",
+      "source_title": "Beijing cuisine",
+      "id": "P003",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "How many cultivars of glutinous rice exist? What do they differ from non-glutinous strains?",
+      "answer": "There are numerous cultivars of glutinous rice, including japonica, indica, tropical japonica, and various hybrid cultivars.",
+      "type": "factual",
+      "difficulty": "hard",
+      "source_title": "Glutinous rice",
+      "id": "F003",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "How did the Finnish language compare to other European and West-Asian languages?",
+      "answer": "The Finnish language belongs to an entirely different language group (Uralic) than virtually all other European and West-Asian languages, collectively termed Indo-European (including languages from Iran, India, Russia, Poland, Greece, Germanic languages (German, English, Swedish etc) and all of the Romance languages including Spanish and French).",
+      "type": "factual",
+      "difficulty": "hard",
+      "source_title": "77. Finland",
+      "id": "F023",
+      "source_doc_type": "blog"
+    },
+    {
+      "question": "What are some key components of Chinese cuisine?",
+      "answer": "Key components include rice, soy sauce, noodles, tea, chili oil, tofu, chopsticks, and the wok.",
+      "type": "ingredient",
+      "difficulty": "easy",
+      "source_title": "Chinese cuisine",
+      "id": "I004",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What are the main ingredients of Fried Rice?",
+      "answer": "The main ingredients of Fried Rice include cooked rice, bean sprouts, kidney beans, aromatics, black pepper, chili pepper, fried rice spice, and optional meat.",
+      "type": "ingredient",
+      "difficulty": "hard",
+      "source_title": "Cookbook:Fried Rice",
+      "id": "I014",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "How does Nattō get its unique flavor?",
+      "answer": "Nattō is often considered an acquired taste due to its powerful smell, strong flavor, and sticky, slimy texture.",
+      "type": "procedural",
+      "difficulty": "medium",
+      "source_title": "Nattō",
+      "id": "P014",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What are the components of Kimchi?",
+      "answer": "The main components of Kimchi include salted fruits and vegetables, often seasoned with gochugaru (spice), and fermented seafood products like salted shrimp or fish sauce.",
+      "type": "ingredient",
+      "difficulty": "easy",
+      "source_title": "Cookbook:Kimchi",
+      "id": "I016",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "What are the typical methods used to ferment Kimchi?",
+      "answer": "Fermentation methods for Kimchi include using salted fruits and vegetables, seasoning mixtures, and additional brine/pickling liquids.",
+      "type": "ingredient",
+      "difficulty": "hard",
+      "source_title": "Cookbook:Kimchi",
+      "id": "I017",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "How does the use of imported ingredients affect the taste of traditional Chinese-American dishes?",
+      "answer": "The use of imported ingredients like rice, noodles, and vegetables adds a unique flavor to traditional Chinese-American dishes, contributing to their distinct character.",
+      "type": "procedural",
+      "difficulty": "easy",
+      "source_title": "74. Northern USA",
+      "id": "P031",
+      "source_doc_type": "blog"
+    },
+    {
+      "question": "What are some common ingredients in miso soup?",
+      "answer": "Niboshi (dried baby snails), kombu (dried kelp), katsuobushi (thin shavings of fermented, dried, and smoked bonito), or hoshi-shiitake (dried shiitake).",
+      "type": "ingredient",
+      "difficulty": "hard",
+      "source_title": "Miso soup",
+      "id": "I008",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "What does kimchi production involve?",
+      "answer": "The vegetables may be pre-salted or pre-brined to change their texture and make them more receptive to seasoning. Seasoning mixture and/or other ingredients are then applied before packing into containers for fermentation. Additional brine/pickling liquid may be added at this point.",
+      "type": "cultural",
+      "difficulty": "hard",
+      "source_title": "Cookbook:Kimchi",
+      "id": "CU018",
+      "source_doc_type": "wikibooks"
+    },
+    {
+      "question": "What is the main ingredient of glutinous rice?",
+      "answer": "Glutinous rice is a type of rice grown mainly in Southeast Asia and the northeastern regions of South Asia.",
+      "type": "cultural",
+      "difficulty": "easy",
+      "source_title": "Glutinous rice",
+      "id": "CU002",
+      "source_doc_type": "wikipedia"
+    },
+    {
+      "question": "How do you prepare donburi?",
+      "answer": "To prepare donburi, start by making sure your bowls are big enough to hold your rice. Take a bowl and fill it with your preferred filling like fish, meat, vegetables, or other ingredients. Add enough broth to cover everything, then add soy sauce, mirin, and dashi. Simmer until the mixture is cooked and bubbly.",
+      "type": "procedural",
+      "difficulty": "easy",
+      "source_title": "Donburi",
+      "id": "P015",
+      "source_doc_type": "wikipedia"
+    }
+  ]
+}

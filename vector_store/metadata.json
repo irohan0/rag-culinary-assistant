@@ -1,0 +1,21 @@
+{
+  "created_at": "2026-03-22T10:03:47.986907",
+  "chunking_strategy": "semantic",
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "embedding_dim": 384,
+  "total_chunks": 3356,
+  "total_docs": 237,
+  "chunking_comparison": {
+    "fixed_256": 1536,
+    "fixed_512": 827,
+    "sentence": 1849,
+    "semantic": 3356
+  },
+  "embedding_models_compared": [
+    "all-MiniLM-L6-v2",
+    "BAAI/bge-small-en-v1.5"
+  ],
+  "selected_embedding_model": "BAAI/bge-small-en-v1.5",
+  "reason_chunking": "Semantic chunking preserves topical coherence, improving retrieval precision over fixed-size splitting",
+  "reason_embedding": "BGE-small is trained for retrieval tasks and outperforms MiniLM on passage retrieval benchmarks"
+}

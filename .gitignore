@@ -1,0 +1,13 @@
+.env
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+vector_store/index.faiss
+vector_store/chunks.pkl
+vector_store/bm25.pkl
+data/raw/
+data/processed/
+outputs/train_outputs.json
+outputs/evaluation/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,44 @@
+{
+  "queries": [
+    {
+      "id": "Q001",
+      "question": "What is the main ingredient in miso soup?"
+    },
+    {
+      "id": "Q002",
+      "question": "How is kimchi made?"
+    },
+    {
+      "id": "Q003",
+      "question": "What makes Sichuan cuisine spicy?"
+    },
+    {
+      "id": "Q004",
+      "question": "How is Peking duck prepared?"
+    },
+    {
+      "id": "Q005",
+      "question": "What is the difference between udon and soba noodles?"
+    },
+    {
+      "id": "Q006",
+      "question": "What are the key ingredients in bibimbap?"
+    },
+    {
+      "id": "Q007",
+      "question": "How does hot pot differ from shabu-shabu?"
+    },
+    {
+      "id": "Q008",
+      "question": "What is wagyu beef?"
+    },
+    {
+      "id": "Q009",
+      "question": "What is the cultural significance of kimchi in Korea?"
+    },
+    {
+      "id": "Q010",
+      "question": "How is tofu made?"
+    }
+  ]
+}
