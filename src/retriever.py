@@ -1,180 +1,246 @@
-# src/retriever.py
 # =============================================================================
-# Retrieval and ranking strategies.
-# Three approaches implemented and compared:
-#   1. Dense only   — FAISS cosine similarity (baseline)
-#   2. BM25 only    — sparse keyword retrieval (baseline)
-#   3. Hybrid + Reranking — RRF fusion + cross-encoder (selected)
+# Retrieval and ranking module — four strategies:
+#   1. Dense only          — FAISS cosine similarity (baseline)
+#   2. BM25 only           — sparse keyword retrieval (baseline)
+#   3. Hybrid + Reranking  — RRF + cross-encoder (selected)
+#   4. Query expansion     — multi-query RRF + reranking (improved)
+#
+# Also includes MMR (Maximal Marginal Relevance) as an alternative reranker
 # =============================================================================
-
+ 
 import numpy as np
 import faiss
 import pickle
+import torch
+from sklearn.metrics.pairwise import cosine_similarity as sklearn_cosine
 from sentence_transformers import CrossEncoder
-
-
+ 
+ 
 class Retriever:
     """
-    Handles all retrieval strategies for the RAG inference pipeline.
-    Loads FAISS index, BM25 index, and chunks from disk.
+    Full retrieval pipeline with dense, sparse, hybrid,
+    query expansion, and MMR support.
     """
-
+ 
     def __init__(self, vector_store_path="vector_store", embedder=None):
-        """
-        Args:
-            vector_store_path : path to folder containing index files
-            embedder          : Embedder instance for query encoding
-        """
         self.embedder = embedder
-
-        # Load FAISS dense index
+ 
+        # FAISS dense index
         self.index = faiss.read_index(f"{vector_store_path}/index.faiss")
         print(f"FAISS index loaded — {self.index.ntotal:,} vectors")
-
-        # Load chunk metadata
+ 
+        # Chunk metadata
         with open(f"{vector_store_path}/chunks.pkl", "rb") as f:
             self.chunks = pickle.load(f)
         print(f"Chunks loaded     — {len(self.chunks):,} chunks")
-
-        # Load BM25 sparse index
+ 
+        # BM25 sparse index
         with open(f"{vector_store_path}/bm25.pkl", "rb") as f:
             self.bm25 = pickle.load(f)
         print(f"BM25 index loaded")
-
-        # Load cross-encoder reranker
+ 
+        # Cross-encoder reranker
         self.reranker = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2")
         print(f"Reranker loaded")
-
+ 
     # ── Strategy 1: Dense retrieval ──────────────────────────────────────────
-
+ 
     def dense_retrieve(self, query, k=10):
-        """
-        Pure dense retrieval using FAISS cosine similarity.
-
-        Args:
-            query : question string
-            k     : number of results to return
-        Returns:
-            list of dicts with chunk, score, method, index
-        """
+        """Pure dense retrieval using FAISS cosine similarity."""
         q_emb           = self.embedder.encode_query(query)
         scores, indices = self.index.search(q_emb, k)
-
-        results = []
-        for score, idx in zip(scores[0], indices[0]):
-            if idx == -1:
-                continue
-            results.append({
-                "chunk":  self.chunks[idx],
-                "score":  float(score),
-                "method": "dense",
-                "index":  int(idx),
-            })
-        return results
-
-    # ── Strategy 2: BM25 sparse retrieval ────────────────────────────────────
-
+        return [
+            {"chunk": self.chunks[idx], "score": float(s),
+             "method": "dense", "index": int(idx)}
+            for s, idx in zip(scores[0], indices[0]) if idx != -1
+        ]
+ 
+    # ── Strategy 2: BM25 retrieval ───────────────────────────────────────────
+ 
     def bm25_retrieve(self, query, k=10):
+        """BM25 sparse keyword retrieval."""
+        scores  = self.bm25.get_scores(query.lower().split())
+        top_k   = np.argsort(scores)[::-1][:k]
+        return [
+            {"chunk": self.chunks[idx], "score": float(scores[idx]),
+             "method": "bm25", "index": int(idx)}
+            for idx in top_k if scores[idx] > 0
+        ]
+ 
+    # ── RRF fusion ───────────────────────────────────────────────────────────
+ 
+    def reciprocal_rank_fusion(self, *ranked_lists, k=60):
         """
-        BM25 sparse retrieval — keyword-based.
-        Complements dense retrieval by catching exact keyword matches.
-
-        Args:
-            query : question string
-            k     : number of results to return
-        Returns:
-            list of dicts with chunk, score, method, index
-        """
-        tokenised = query.lower().split()
-        scores    = self.bm25.get_scores(tokenised)
-        top_k     = np.argsort(scores)[::-1][:k]
-
-        results = []
-        for idx in top_k:
-            if scores[idx] > 0:
-                results.append({
-                    "chunk":  self.chunks[idx],
-                    "score":  float(scores[idx]),
-                    "method": "bm25",
-                    "index":  int(idx),
-                })
-        return results
-
-    # ── Strategy 3: Hybrid + Reranking ───────────────────────────────────────
-
-    def reciprocal_rank_fusion(self, dense_results, bm25_results, k=60):
-        """
-        Combines dense and BM25 ranked lists using Reciprocal Rank Fusion.
-        RRF score = sum of 1/(k + rank) across all lists.
+        Combines any number of ranked lists using Reciprocal Rank Fusion.
+        RRF score = sum(1 / (k + rank)) across all lists.
         k=60 is the standard smoothing constant.
-
-        Args:
-            dense_results : list from dense_retrieve
-            bm25_results  : list from bm25_retrieve
-            k             : RRF smoothing constant
-        Returns:
-            merged and re-ranked list of results
         """
         scores = {}
-
-        for rank, result in enumerate(dense_results, 1):
-            idx = result["index"]
-            scores[idx] = scores.get(idx, 0) + 1 / (k + rank)
-
-        for rank, result in enumerate(bm25_results, 1):
-            idx = result["index"]
-            scores[idx] = scores.get(idx, 0) + 1 / (k + rank)
-
-        sorted_indices = sorted(scores.items(), key=lambda x: x[1], reverse=True)
-
+        for ranked_list in ranked_lists:
+            for rank, result in enumerate(ranked_list, 1):
+                idx = result["index"]
+                scores[idx] = scores.get(idx, 0) + 1 / (k + rank)
+ 
+        sorted_idx = sorted(scores.items(), key=lambda x: x[1], reverse=True)
         return [
             {"chunk": self.chunks[idx], "score": rrf_score,
              "method": "hybrid_rrf", "index": idx}
-            for idx, rrf_score in sorted_indices
+            for idx, rrf_score in sorted_idx
         ]
-
+ 
+    # ── Cross-encoder reranker ────────────────────────────────────────────────
+ 
     def rerank(self, query, candidates, top_n=5):
         """
         Cross-encoder reranking: scores (query, chunk) pairs jointly.
-        More accurate than bi-encoder similarity but slower — applied
-        only to top candidates from RRF.
-
-        Args:
-            query      : question string
-            candidates : list of candidate results from RRF
-            top_n      : number of final results to return (max 5 per spec)
-        Returns:
-            top_n results sorted by reranker score
+        Applied only to top candidates from RRF to keep latency acceptable.
         """
         if not candidates:
             return []
-
         pairs  = [(query, c["chunk"]["text"]) for c in candidates]
         scores = self.reranker.predict(pairs)
-
-        for candidate, score in zip(candidates, scores):
-            candidate["reranker_score"] = float(score)
-
-        reranked = sorted(candidates, key=lambda x: x["reranker_score"], reverse=True)
-        return reranked[:top_n]
-
-    def retrieve(self, query, initial_k=20, final_k=5):
+        for c, s in zip(candidates, scores):
+            c["reranker_score"] = float(s)
+        return sorted(candidates, key=lambda x: x["reranker_score"], reverse=True)[:top_n]
+ 
+    # ── MMR reranker ──────────────────────────────────────────────────────────
+ 
+    def mmr_rerank(self, query, candidates, lambda_=0.5, k=5):
         """
-        Full hybrid retrieval pipeline (selected strategy):
-          1. Dense retrieval (top initial_k)
-          2. BM25 retrieval  (top initial_k)
+        Maximal Marginal Relevance reranking.
+        Balances relevance to query with diversity among selected chunks.
+        Prevents returning multiple chunks that say the same thing.
+ 
+        Args:
+            query      : question string
+            candidates : list of candidate results
+            lambda_    : trade-off (1=pure relevance, 0=pure diversity)
+            k          : number of chunks to return
+ 
+        Returns:
+            k chunks selected by MMR
+        """
+        if not candidates:
+            return []
+ 
+        texts      = [c["chunk"]["text"] for c in candidates]
+        chunk_embs = self.embedder.encode_documents(texts, show_progress=False)
+        q_emb      = self.embedder.encode_query(query)
+ 
+        selected  = []
+        remaining = list(range(len(candidates)))
+ 
+        while len(selected) < k and remaining:
+            rem_embs = chunk_embs[remaining]
+ 
+            # Relevance to query
+            rel_sims = sklearn_cosine(q_emb, rem_embs)[0]
+ 
+            if not selected:
+                best_local = np.argmax(rel_sims)
+            else:
+                # Redundancy with already selected
+                sel_embs  = chunk_embs[selected]
+                red_sims  = sklearn_cosine(rem_embs, sel_embs).max(axis=1)
+                mmr_scores = lambda_ * rel_sims - (1 - lambda_) * red_sims
+                best_local = np.argmax(mmr_scores)
+ 
+            best_global = remaining[best_local]
+            selected.append(best_global)
+            remaining.remove(best_global)
+ 
+        return [candidates[i] for i in selected]
+ 
+    # ── Strategy 3: Hybrid + Reranking (selected) ────────────────────────────
+ 
+    def retrieve(self, query, initial_k=20, final_k=5, use_mmr=False):
+        """
+        Full hybrid pipeline (selected strategy):
+          1. Dense retrieval  (top initial_k)
+          2. BM25 retrieval   (top initial_k)
           3. RRF fusion
-          4. Cross-encoder reranking (top final_k)
-
+          4. Cross-encoder or MMR reranking (top final_k)
+ 
         Args:
             query     : question string
             initial_k : candidates per retrieval method
             final_k   : final chunks returned (max 5 per spec)
-        Returns:
-            list of up to final_k ranked chunk results
+            use_mmr   : use MMR instead of cross-encoder reranking
         """
-        dense_results = self.dense_retrieve(query, k=initial_k)
-        bm25_results  = self.bm25_retrieve(query,  k=initial_k)
-        fused         = self.reciprocal_rank_fusion(dense_results, bm25_results)
-        reranked      = self.rerank(query, fused[:initial_k], top_n=final_k)
-        return reranked
+        dense_r = self.dense_retrieve(query, k=initial_k)
+        bm25_r  = self.bm25_retrieve(query,  k=initial_k)
+        fused   = self.reciprocal_rank_fusion(dense_r, bm25_r)
+ 
+        if use_mmr:
+            return self.mmr_rerank(query, fused[:initial_k],
+                                   lambda_=0.5, k=final_k)
+        else:
+            return self.rerank(query, fused[:initial_k], top_n=final_k)
+ 
+    # ── Strategy 4: Query expansion ──────────────────────────────────────────
+ 
+    def retrieve_with_expansion(self, query, generator,
+                                initial_k=15, final_k=5):
+        """
+        Query expansion: generates alternative phrasings of the query,
+        retrieves for each, fuses all lists via RRF, then reranks.
+ 
+        Improves recall for queries where the user's phrasing doesn't
+        directly match the vocabulary used in the corpus.
+ 
+        Args:
+            query     : original question string
+            generator : Generator instance (used to expand query)
+            initial_k : candidates per query variant
+            final_k   : final chunks returned
+        """
+        # Generate query variants
+        from src.generator import STRATEGIES
+        strat      = STRATEGIES["zero_shot"]
+        sys_prompt = strat["system"]
+        user_msg   = (
+            f"Write 2 different ways to ask this question about East Asian cuisine. "
+            f"Output ONLY the questions, one per line, no numbering or explanation.\n\n"
+            f"Original question: {query}"
+        )
+ 
+        import torch
+        messages = [
+            {"role": "system", "content": sys_prompt},
+            {"role": "user",   "content": user_msg},
+        ]
+        text   = generator.tokenizer.apply_chat_template(
+            messages, tokenize=False, add_generation_prompt=True
+        )
+        device = next(generator.model.parameters()).device
+        inputs = generator.tokenizer([text], return_tensors="pt").to(device)
+ 
+        with torch.no_grad():
+            out = generator.model.generate(
+                **inputs, max_new_tokens=80, temperature=0.7,
+                do_sample=True, pad_token_id=generator.tokenizer.eos_token_id,
+            )
+        generated = out[0][inputs["input_ids"].shape[1]:]
+        expanded  = generator.tokenizer.decode(generated, skip_special_tokens=True)
+ 
+        # Parse variants — take lines that look like questions
+        variants = [query]
+        for line in expanded.split("\n"):
+            line = line.strip().lstrip("0123456789.-) ")
+            if len(line) > 10 and len(line) < 200:
+                variants.append(line)
+        variants = variants[:3]  # original + at most 2 variants
+ 
+        # Retrieve for each variant
+        all_ranked_lists = []
+        for variant in variants:
+            dense_r = self.dense_retrieve(variant, k=initial_k)
+            bm25_r  = self.bm25_retrieve(variant,  k=initial_k)
+            all_ranked_lists.extend([dense_r, bm25_r])
+ 
+        # Fuse all lists and rerank
+        fused    = self.reciprocal_rank_fusion(*all_ranked_lists)
+        reranked = self.rerank(query, fused[:initial_k*2], top_n=final_k)
+ 
+        return reranked, variants
+ 

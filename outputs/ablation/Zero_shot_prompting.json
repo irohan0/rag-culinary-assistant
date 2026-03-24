@@ -1,0 +1,902 @@
+[
+  {
+    "id": "CU015",
+    "question": "When did sushi begin to evolve into its current form?",
+    "gold_answer": "Around the 14th and 16th centuries, rice vinegar started to be added to the rice to help speed up the process which took several months.",
+    "pred_answer": "Sushi began evolving into its current form around 1824 in the Edo period (1603–1867). This innovation marked the transition from a method of pickling fish to a more versatile and flavorful food.",
+    "type": "cultural",
+    "difficulty": "medium",
+    "retrieved": [
+      {
+        "doc_title": "Cookbook:Sushi",
+        "text": "Much care is put into the creation of the dish and the many methods of preparing the food indicate the importance of appearance to the educated consumer. ## History\n\nBeginning as a method ofpicklingfi"
+      },
+      {
+        "doc_title": "Sushi",
+        "text": "This innovation occurred around 1824 in theEdo period(1603–1867). It was the fast food of thechōninclass in the Edo period. Sushi is traditionally made with medium-grainwhite rice, although it can als"
+      },
+      {
+        "doc_title": "Sushi",
+        "text": "This innovation occurred around 1824 in theEdo period(1603–1867). It was the fast food of thechōninclass in the Edo period. Sushi is traditionally made with medium-grainwhite rice, although it can als"
+      },
+      {
+        "doc_title": "Sushi",
+        "text": "During the Muromachi period (1336–1573), the Japanese invented a style of sushi callednamanareornamanari(生成, なまなれ, なまなり), which means \"partially fermented\". The fermentation period ofnamanarewas short"
+      },
+      {
+        "doc_title": "Sushi",
+        "text": "During the Muromachi period (1336–1573), the Japanese invented a style of sushi callednamanareornamanari(生成, なまなれ, なまなり), which means \"partially fermented\". The fermentation period ofnamanarewas short"
+      }
+    ]
+  },
+  {
+    "id": "P028",
+    "question": "What event marked the beginning of Finland's occupation by other countries?",
+    "gold_answer": "The Coexistence of these two languages is perhaps stranger than it would first appear, as Finnish belongs to an entirely different language group (Uralic) than virtually all other European and West-Asian languages, collectively termed Indo-European.",
+    "pred_answer": "Finland was part of the Swedish kingdom from the middle ages until periods of instability in the 18th century, ending with the Finnish war in 1809 when it became a Grand Duchy of Russia until 1917, when it became a republic. During its occupation by other countries, local Finnish people were relegated to peasants and slaves, with the upper class of the country speaking Swedish.",
+    "type": "procedural",
+    "difficulty": "easy",
+    "retrieved": [
+      {
+        "doc_title": "77. Finland",
+        "text": "# 77. Finland\n\nFinland was part of the Swedish kingdom from the middle ages until periods of instability in the 18th century, ending with the Finnish war in 1809 when it became a Grand Duchy of Russia"
+      },
+      {
+        "doc_title": "77. Finland",
+        "text": "The infamous comments of two high-profile figures in Europe, Jacques Chirac and Silvio Berlusconi, that Finnish cuisine is one of the worst in the world, is therefore especially insensitive to the lon"
+      },
+      {
+        "doc_title": "78. Vietnam",
+        "text": "France also left its mark on the country after its occupation beginning in the 1800s, introducing bread, onions, potatoes, lettuce, dairy products and coffee in the process. The neighbouring countries"
+      },
+      {
+        "doc_title": "77. Finland",
+        "text": "Karjalanpiirakka\nKarjalanpiirakka, commonly known in English as Karelian pies, are pasties made with a thin rye crust encasing a savoury filling. “Karelian” refers to the territory of Karelia that use"
+      },
+      {
+        "doc_title": "Korean cuisine",
+        "text": "One thousand such markets existed in the 19th century, and were communal centers for economic trade and entertainment. The end of the Joseon period was marked by consistent encouragement to trade with"
+      }
+    ]
+  },
+  {
+    "id": "C001",
+    "question": "How does Chinese hot pot differ from Japanese shabu-shabu?",
+    "gold_answer": "Chinese hot pot uses richly spiced broths (often split spicy and mild) with diverse ingredients including offal and fish balls. Japanese shabu-shabu uses a delicate kombu broth and focuses on thinly sliced high-quality beef dipped briefly and eaten with ponzu or sesame sauce. Shabu-shabu is more restrained while hot pot is more varied.",
+    "pred_answer": "Chinese hot pot differs from Japanese shabu-shabu in several ways:\n\n1. Ingredients: Japanese shabu-shabu typically includes thinly sliced meat and vegetables, while Chinese hot pot often features a variety of ingredients like tofu, shrimp, and seafood.\n\n2. Cooking method: Japanese shabu-shabu is usually cooked in broth, whereas Chinese hot pot uses a dry method with dried ingredients.\n\n3. Preparation technique: Japanese shabu-shabu is traditionally stirred in the pot before serving, while Chinese hot pot is often served directly from the pot.\n\n4. Serving method: Japanese shabu-shabu is often served with a dipping sauce, while Chinese hot pot can be enjoyed separately or paired with a side dish.\n\n5. Cultural significance: While both shabu-shabu and Chinese hot pot have their own unique flavors and cultural roots, they share similarities in terms of their origins and presentation methods.",
+    "type": "comparative",
+    "difficulty": "medium",
+    "retrieved": [
+      {
+        "doc_title": "Hot pot",
+        "text": "In Japan, hot pots are known asnabemono. There are many variations, includingsukiyaki,yosenabe,shabu-shabu,oden, andchankonabe. The Chinese-style hot pot is transliterated as hinabe(火鍋,hinabe). In Kor"
+      },
+      {
+        "doc_title": "Shabu-shabu",
+        "text": "The first is that it comes from theInner Mongolianhot potknown asinstant-boiled mutton(shuàn yángròu), which was introduced to Japan afterWorld War IIby Japanese who had lived inBeijing.Both dishes ar"
+      },
+      {
+        "doc_title": "Hot pot",
+        "text": "The condiments for a Lao hot pot normally include crushed chili and minced raw garlic, lime wedges, cilantro leaves and fish sauce. In the capitalVientiane, there are also numerous restaurants serving"
+      },
+      {
+        "doc_title": "Shabu-shabu",
+        "text": "# Shabu-shabu\n\n## Introduction\n\nShabu-shabu(Japanese:しゃぶしゃぶ,romanized:shabushabu) is a Japanesenabemonohotpotdish of thinly sliced meat and vegetables boiled in water and served with dipping sauces.Th"
+      },
+      {
+        "doc_title": "Hot pot",
+        "text": "The typical dipping sauce containssesame oiland is mixed with crushed fresh garlic and chopped spring onions. Sichuanalso has a number of \"dry\" hot pots such asmala xiangguo (Chinese: 麻辣香鍋), which are"
+      }
+    ]
+  },
+  {
+    "id": "P012",
+    "question": "How does deep frying work?",
+    "gold_answer": "Deep frying involves food being submerged in hot fat, typically lard or oil, as opposed to shallow frying used in traditional frying methods.",
+    "pred_answer": "Deep frying works by submerging food in hot oil, typically lard or oil, without allowing any part of the food to touch the oil's surface. This allows the oil to conduct heat efficiently, causing the food to cook quickly. The process includes:\n\n1. Preparing the oil: Typically, a deep fryer or pressure cooker is used.\n2. Heating the oil: The oil is preheated to a high temperature.\n3. Submerging the food: Food is placed in the hot oil.\n4. Cooking the food: The oil continues to heat, steaming the food evenly.\n5. Removing the food: Once cooked, the food is removed from the oil.\n6. Cleaning: The food is cleaned with soap and water after removal.\n7. Serving: The fried food is served immediately or refrigerated for later use.",
+    "type": "procedural",
+    "difficulty": "easy",
+    "retrieved": [
+      {
+        "doc_title": "Deep frying",
+        "text": "# Deep frying\n\n## Introduction\n\nDeep frying(sometimes referred to asdeep fat frying) is acookingmethod in which food is submerged in hotfat, traditionallylardbut today most commonlyoil, as opposed to "
+      },
+      {
+        "doc_title": "Deep frying",
+        "text": "## Oil deterioration and chemical changes\n\nDeep fat frying involves heating oil to temperatures in excess of 180 °C in the presence of moisture and air. These conditions can induce a series of complex"
+      },
+      {
+        "doc_title": "Deep frying",
+        "text": "Oil vapors can also condense on more distant surfaces such as walls and ceilings. Supplies such as dish detergent and baking soda can effectively clean affected surfaces. ## Tools\n\nDeep frying is done"
+      },
+      {
+        "doc_title": "Deep frying",
+        "text": "While most foods need batter coatings for protection, it is not as necessary for cooked noodles and potatoes because their high starch content enables them to hold more moisture and not shrink. Foods "
+      },
+      {
+        "doc_title": "Deep frying",
+        "text": "Additionally, deep frying can be used as a form of artwork by frying non-edible objects, such aselectronics.Artists such as Henry Hargreaves have deep-fried replicas of electronic items such asiPads,G"
+      }
+    ]
+  },
+  {
+    "id": "I001",
+    "question": "What is the traditional method of preparing duck dishes in Beijing cuisine?",
+    "gold_answer": "In Beijing cuisine, duck dishes are often prepared using various methods including deep-frying, stir-frying, and braising.",
+    "pred_answer": "The traditional method of preparing Peking duck in Beijing cuisine is in an oven (closed oven).",
+    "type": "ingredient",
+    "difficulty": "easy",
+    "retrieved": [
+      {
+        "doc_title": "Peking duck",
+        "text": "Two notable restaurants in Beijing which serve this dish areQuanjudeandBianyifang, both centuries-old establishments which have become household names, each with their own style: Quanjude is known for"
+      },
+      {
+        "doc_title": "Peking duck",
+        "text": "Two main breeds are available: a fattier breed for those preferring the traditional taste and a leaner breed with large chest muscles for younger palates. The lean type matures in 40 days and reaches "
+      },
+      {
+        "doc_title": "Peking duck",
+        "text": "The traditional way is in abrothwith ingredients such as Chinese cabbage and soft tofu. The carved duck can also be chopped and stir-fried insweet bean sauce, or rapidly sautéed and served with salt a"
+      },
+      {
+        "doc_title": "Peking duck",
+        "text": "# Peking duck\n\n## Introduction\n\nPeking duckis a dish fromBeijingthat has been prepared since theImperial era. The meat is characterized by its thin, crispy skin, with authentic versions of the dish se"
+      },
+      {
+        "doc_title": "Peking duck",
+        "text": "Bianyifang, a restaurant in Beijing, China, is famous for keeping this tradition. The closed oven is built ofbrickand fitted with metal griddles (Chinese:箅子;pinyin:bì zi). The oven is preheated by bur"
+      }
+    ]
+  },
+  {
+    "id": "P027",
+    "question": "How is Bibimbap typically prepared?",
+    "gold_answer": "Bibimbap is traditionally prepared using steamed white rice topped with vegetables, beef (often tofu or chicken), a whole egg, and gochujang.",
+    "pred_answer": "Bibimbap is typically prepared by arranging the ingredients separately and attractingively, with the egg sitting in the center. Gochujang, kimchi, and other root or leafy vegetables are served on the side in small individual bowls for the table to help oneself. If using dolsots (Korean stoneware bowls), the preparation is slightly different.",
+    "type": "procedural",
+    "difficulty": "medium",
+    "retrieved": [
+      {
+        "doc_title": "Bibimbap",
+        "text": "## Preparation\n\nBibimbap uses various ingredients. Common vegetables includejuliennedoi(cucumber),aehobak(courgette/zucchini),mu(radish), mushrooms,doraji(bellflowerroot),gim, spinach,soybean sprouts,"
+      },
+      {
+        "doc_title": "Cookbook:Bibimbap",
+        "text": "They should be arranged separately and attractively. The egg sits in the middle. Gochujang, kimchi, and any other root or leafy vegetable is served on the side in small individual bowls for the table "
+      },
+      {
+        "doc_title": "71. Korea",
+        "text": "Bibimbap is traditionally served on the eve of the lunar New Year, as a way to use up all of the leftover side dishes in the house and therefore start anew in all aspects. However, there are also orig"
+      },
+      {
+        "doc_title": "Cookbook:Bibimbap",
+        "text": "# Cookbook:Bibimbap\n\n## Introduction\n\nCookbook|Recipes|Ingredients|Equipment|Techniques|Cookbook Disambiguation Pages|Recipes|Korean Cuisine\nBibimbap(also calledBibimbaorBibimbop) is a typical Korean "
+      },
+      {
+        "doc_title": "Cookbook:Bibimbap",
+        "text": "It is often made vegetarian by substituting tofu for beef.Dolsot Bibimbapis a variation where the dish is served in a very hot stoneware bowl, crisping the rice and cooking the egg. The ingredients be"
+      }
+    ]
+  },
+  {
+    "id": "F022",
+    "question": "What period of time did Finland become a Grand Duchy of Russia?",
+    "gold_answer": "During its occupation by other countries, local Finnish people were relegated to peasants and slaves.",
+    "pred_answer": "Finland became a Grand Duchy of Russia in 1809 after the Finnish war.",
+    "type": "factual",
+    "difficulty": "medium",
+    "retrieved": [
+      {
+        "doc_title": "77. Finland",
+        "text": "# 77. Finland\n\nFinland was part of the Swedish kingdom from the middle ages until periods of instability in the 18th century, ending with the Finnish war in 1809 when it became a Grand Duchy of Russia"
+      },
+      {
+        "doc_title": "77. Finland",
+        "text": "Karjalanpiirakka\nKarjalanpiirakka, commonly known in English as Karelian pies, are pasties made with a thin rye crust encasing a savoury filling. “Karelian” refers to the territory of Karelia that use"
+      },
+      {
+        "doc_title": "77. Finland",
+        "text": "The infamous comments of two high-profile figures in Europe, Jacques Chirac and Silvio Berlusconi, that Finnish cuisine is one of the worst in the world, is therefore especially insensitive to the lon"
+      },
+      {
+        "doc_title": "Korean cuisine",
+        "text": "## Three Kingdoms period\n\nTheThree Kingdomsperiod (57 BCE – 668 CE) was one of rapid cultural evolution. The kingdom ofGoguryeo(37 BCE – 668 CE) was located in the northern part of the peninsula along"
+      },
+      {
+        "doc_title": "Wagashi",
+        "text": "Later, the soup was removed and replaced with a pasty confection made of barley or azuki bean flour. Finally, around 1800, during theEdo period(1603–1868), 500 years later, yōkan became what it is tod"
+      }
+    ]
+  },
+  {
+    "id": "CU003",
+    "question": "How does glutinous rice differ from non-glutinous rice?",
+    "gold_answer": "Glutinous rice differs from non-glutinous rice in that it has transparent grains and very low amylose content.",
+    "pred_answer": "Glutinous rice differs from non-glutinous rice in several ways:\n\n1. **Sticky Quality**: Glutinous rice is known for its sticky nature, making it particularly popular in Asian cuisines where it's used in dishes like sushi rolls, noodles, and stir-fries.\n\n2. **High Amylopectin Content**: Unlike non-glutinous rice, glutinous rice has a much higher amylopectin content. This makes it more sticky and less liquid.\n\n3. **Amylopectin Structure**: The amylopectin in glutinous rice is more hydrophilic than in non-glutinous rice. This means it tends to absorb water better, leading to a thicker consistency.\n\n4. **Gelation Process**: When glutinous rice is soaked in water, it forms a gel-like structure rather than a solid mass. This gelatinization process contributes to its sticky texture.\n\n5. **Texture**: The texture of glutinous rice is characterized by its thick,",
+    "type": "cultural",
+    "difficulty": "hard",
+    "retrieved": [
+      {
+        "doc_title": "Glutinous rice",
+        "text": "Glutinous rice can be consumed milled or unmilled (that is, with thebranremoved or not removed). Milled glutinous rice is white and fully opaque (unlike non-glutinous rice varieties, which are somewha"
+      },
+      {
+        "doc_title": "Glutinous rice",
+        "text": "# Glutinous rice\n\n## Introduction\n\nGlutinous rice(Oryza sativavar. glutinosa; also calledsticky rice,sweet riceorwaxy rice) is a type ofricegrown mainly inSoutheast Asiaand the northeastern regions of"
+      },
+      {
+        "doc_title": "Glutinous rice",
+        "text": "## Composition\n\nGlutinous rice is distinguished from other types of rice by having no (or negligible amounts of)amyloseand high amounts ofamylopectin(the two components ofstarch). Amylopectin is respo"
+      },
+      {
+        "doc_title": "Mochi",
+        "text": "An interesting characteristic of glutinous rice is that it stains red when iodine is added, whereas nonglutinous rice stains blue.This phenomenon occurs wheniodineis mixed with iodide to form tri-iodi"
+      },
+      {
+        "doc_title": "Mochi",
+        "text": "## Chemistry and structural composition of glutinous rice\n\nAmyloseandamylopectinare both components of starch and polysaccharides made from D-glucoseunits. The big difference between the two is that a"
+      }
+    ]
+  },
+  {
+    "id": "CU001",
+    "question": "What are some common customs associated with sake consumption?",
+    "gold_answer": "Some common customs associated with sake consumption include being gently warmed in a small earthenware or porcelain bottle and sipped from a small porcelain cup called asakazuki.",
+    "pred_answer": "Some common customs associated with sake consumption include:\n\n1. Drinking chokoro-choko (small cups) with sake.\n2. Pouring sake from tokkuri (ceramic flasks).\n3. Using side dishes like sakana or rotsumami.\n4. Pairing sake with various cuisines, including non-Japanese ones.\n5. Enjoying sake at formal dinners or gatherings.",
+    "type": "cultural",
+    "difficulty": "medium",
+    "retrieved": [
+      {
+        "doc_title": "Sake",
+        "text": "Sake is traditionally drunk from small cups calledchokooro-choko(お猪口)and poured into thechokofrom ceramic flasks calledtokkuri. This is very common for hot sake, where the flask is heated in hot water"
+      },
+      {
+        "doc_title": "Japanese cuisine",
+        "text": "## Sake\n\nSakeis a brewed rice beverage that typically contains 15–17%alcoholand is made by multiplefermentationof rice. At traditional formal meals, it is considered an equivalent to rice and is not s"
+      },
+      {
+        "doc_title": "Japanese cuisine",
+        "text": "## Sake\n\nSakeis a brewed rice beverage that typically contains 15–17%alcoholand is made by multiplefermentationof rice. At traditional formal meals, it is considered an equivalent to rice and is not s"
+      },
+      {
+        "doc_title": "Sake",
+        "text": "TheNada-Gogōarea inHyōgo Prefecture, the largest producer of modern sake, was formed during this period. When the population ofEdo, modern-dayTokyo, began to grow rapidly in the early 1600s, brewers w"
+      },
+      {
+        "doc_title": "Sake",
+        "text": "In Japan, where it is the national beverage, sake is often served with specialceremony, where it is gently warmed in a small earthenware orporcelainbottle and sipped from a small porcelain cup called "
+      }
+    ]
+  },
+  {
+    "id": "CU016",
+    "question": "When did sushi originate in Japan?",
+    "gold_answer": "Around the 14th and 16th centuries, rice vinegar started to be added to the rice to help speed up the process which took several months. Around this time the rice also started to be consumed with the fish it was used to preserve.",
+    "pred_answer": "Sushi originated in Japan during the Edo period (1603-1867), specifically around 1824.",
+    "type": "cultural",
+    "difficulty": "medium",
+    "retrieved": [
+      {
+        "doc_title": "Sushi",
+        "text": "This innovation occurred around 1824 in theEdo period(1603–1867). It was the fast food of thechōninclass in the Edo period. Sushi is traditionally made with medium-grainwhite rice, although it can als"
+      },
+      {
+        "doc_title": "Sushi",
+        "text": "This innovation occurred around 1824 in theEdo period(1603–1867). It was the fast food of thechōninclass in the Edo period. Sushi is traditionally made with medium-grainwhite rice, although it can als"
+      },
+      {
+        "doc_title": "Sushi",
+        "text": "Generally, the bill is based on the number of sushi plates, with different colors representing a particular price. When Genroku Sushi opened a restaurant at theJapan World Exposition, Osaka, 1970, it "
+      },
+      {
+        "doc_title": "Sushi",
+        "text": "Generally, the bill is based on the number of sushi plates, with different colors representing a particular price. When Genroku Sushi opened a restaurant at theJapan World Exposition, Osaka, 1970, it "
+      },
+      {
+        "doc_title": "Cookbook:Sushi",
+        "text": "Sometime between the 14th and 16th centuries, rice vinegar started to be added to the rice to help speed up the process which took several months. Around this time the rice also started to be consumed"
+      }
+    ]
+  },
+  {
+    "id": "P009",
+    "question": "What is the process of making bento?",
+    "gold_answer": "To make bento, you first prepare a variety of dishes using dried rice, then package them in a container and cover with a lid.",
+    "pred_answer": "To make bento, mothers prepare ingredients the night before and assemble everything the next morning before taking their children to school. This involves cooking rice, noodles, fish or meat, pickling vegetables, and sometimes adding vegetables like carrots, onions, and mushrooms. The ingredients are then packed into a container, usually a plastic bag or cloth bag, with a lid.",
+    "type": "procedural",
+    "difficulty": "hard",
+    "retrieved": [
+      {
+        "doc_title": "Bento",
+        "text": "## Culture\n\nIn Japan, it is common for mothers to make bento for their children to take to school. Because making bento can take a while, some mothers will prepare the ingredients the night before, an"
+      },
+      {
+        "doc_title": "Bento",
+        "text": "InTaiwan,Hong Kongandmainland China,bentois written as便當(pinyin:biàndāng). In otherSinophonecommunities, bothbiandangandbentoare often interchangeably used. ## History\n\nThe increased popularity of ben"
+      },
+      {
+        "doc_title": "Bento",
+        "text": "However, even handmade bento has made a comeback, and they are once again a common, although not universal, sight at Japanese schools. Bento are still used by workers as a packed lunch, and by familie"
+      },
+      {
+        "doc_title": "Bento",
+        "text": "# Bento\n\n## Introduction\n\nAbento(弁当,bentō)is a single-portiontake-outorhome-packedmeal ofJapanese origin, often for lunch, typically includingriceand packaged in a box with a lid (often a segmented bo"
+      },
+      {
+        "doc_title": "Bento",
+        "text": "In the United States, bento box preparation has gained widespread popularity onsocial media, particularlyTikTok, where creators such asSulhee Jessica Woohave attracted millions of followers by sharing"
+      }
+    ]
+  },
+  {
+    "id": "CU028",
+    "question": "What is the origin of the name 'callaloo'?",
+    "gold_answer": "In some parts of the Caribbean, callaloo is a thick fibrous dish more akin to collard greens.",
+    "pred_answer": "The origin of the name 'callaloo' is from the Jamaican language, specifically referring to a type of stewed indigenous leaf vegetable. It's a loose term used throughout the Caribbean, similar to how callaloo is now known in Trinidad and Tobago.",
+    "type": "cultural",
+    "difficulty": "medium",
+    "retrieved": [
+      {
+        "doc_title": "67. The Caribbean: Lesser Antilles",
+        "text": "Crab and callaloo\n“Callaloo” is popular all over the Caribbean, and is a lose term describing any sort of stewed indigenous leaf vegetable (amaranth, taro lead or xanthosome being a few examples), eac"
+      },
+      {
+        "doc_title": "61. The Caribbean: Greater Antilles",
+        "text": "Finally, I cooked callaloo, the concept of which was brought over with the slave trade with inspiration from dishes such as Palaver sauce in West Africa. The dish is made with stewed leafy green veget"
+      },
+      {
+        "doc_title": "Ginger",
+        "text": "## Etymology\n\nThe English origin of the word \"ginger\" is from the mid-14th century, fromOld Englishgingifer, which derives in turn from theMedieval Latingingiber,gingiberfrom the Greekζιγγίβεριςzingib"
+      },
+      {
+        "doc_title": "70. Northern Mexico",
+        "text": "It is also sometimes said that the name burrito actually refers to the tightly rolled bedrolls commonly carried by donkeys, or even the shape of their long curved ears, so perhaps the integrity of the"
+      },
+      {
+        "doc_title": "69. Northern Italy",
+        "text": "The name may come from the Italian word for charcoal burner “carbonaro”, possibly because it was created to feed charcoal workers, or perhaps as a tribute to the secret revolutionary society of carbon"
+      }
+    ]
+  },
+  {
+    "id": "F009",
+    "question": "How did the world's earliest eating establishments recognize restaurants in the modern sense?",
+    "gold_answer": "Street food became an integral aspect of Chinese food culture in the 7th century during the Tang dynasty, and street food culture of much of Southeast Asia was established by workers imported from China during the late 19th century.",
+    "pred_answer": "The world's earliest eating establishments recognized restaurants in the modern sense through the emergence of street food cultures in the Song Dynasty during the 11th and 12th centuries, followed by the establishment of street food cultures in Southeast Asia during the late 19th century.",
+    "type": "factual",
+    "difficulty": "hard",
+    "retrieved": [
+      {
+        "doc_title": "Chinese cuisine",
+        "text": "The world's earliest eating establishments recognizable asrestaurantsin the modern sense first emerged in theSong dynastyChina during the 11th and 12th centuries.Street foodbecame an integral aspect o"
+      },
+      {
+        "doc_title": "Chinese restaurant",
+        "text": "In 2020, a number of Chinese restaurants began trialling the use ofservice robots, including inRenesseandMaastricht.A study published in 2019 raised concerns regardinglabour traffickingin Chinese rest"
+      },
+      {
+        "doc_title": "Hong Kong cuisine",
+        "text": "Some Chinese restaurants were founded in the late 19th century and early 20th century as branches of renowned restaurants in Canton and offered elaborate meals consisting of traditional Chinese \"eight"
+      },
+      {
+        "doc_title": "Chinese restaurant",
+        "text": "In 2020, Egypt's Health Ministry launched a campaign aimed at inspecting Chinese restaurants over food safety concerns in light of theCOVID-19 pandemic;however, Egypt denied reports that premises were"
+      },
+      {
+        "doc_title": "Japanese cuisine",
+        "text": "The feast contained food that reflected European cuisine.For the first time in a thousand years, people were allowed to consume meat in public, and the general population started to include meat in th"
+      }
+    ]
+  },
+  {
+    "id": "F006",
+    "question": "What is the name of the traditional Korean dish teokbokki?",
+    "gold_answer": "Teokbokki is known by various names, including teokjjim, teok-japchae, teok-jeongol, short rib, sirloin, sesame oil, soy sauce, scallion, rock tripe, pine nuts, and toasted sesame seeds.",
+    "pred_answer": "The traditional Korean dish teokbokki is teokbokki.",
+    "type": "factual",
+    "difficulty": "hard",
+    "retrieved": [
+      {
+        "doc_title": "Tteokbokki",
+        "text": "The 2022 English translation of South Korean authorBaek Se-hee’s million plus-selling memoir,I Want to Die but I Want to Eat Tteokbokki, brought the dish to a global audience. ## Varieties\n\nLike other"
+      },
+      {
+        "doc_title": "Tteokbokki",
+        "text": "There are also many variations ingochujang tteokbokki, such as a version that is seasoned withperillaleaf. Sweet and savory, brown soy sauce–basedtteokbokkiis often referred to asgungjung-tteokbokki(궁"
+      },
+      {
+        "doc_title": "Tteokbokki",
+        "text": "It is also a popular home dish, as thegarae-tteokcan be purchased in pre-packaged, semi-dehydrated form. ## History\n\nThe first record oftteokbokkiappears inSiŭijŏnsŏ, a 19th-century cookbook, where th"
+      },
+      {
+        "doc_title": "Tteokbokki",
+        "text": "# Tteokbokki\n\n## Introduction\n\nTteokbokki(English:/ˈtʌkbɒki,ˈtʌkboʊki/TUK-bok-ee,TUK-boh-kee;Korean:떡볶이,pronounced[t͈ʌk̚p͈ok͈i]) orsimmered rice cake, is aKorean foodmade from small-sizedgarae-tteok(l"
+      },
+      {
+        "doc_title": "Tteokbokki",
+        "text": "## Variation based on sauce\n\nPiquant, red gochujang-basedtteokbokkiis one of Korea's most popular snacks. While both soup-stylegungmul-tteokbokki(국물떡볶이;lit. 'souptteokbokki') and drygireum-tteokbokki("
+      }
+    ]
+  },
+  {
+    "id": "I022",
+    "question": "What are some key ingredients in Italian cuisine?",
+    "gold_answer": "Key ingredients in Italian cuisine include local varieties of cured meats and cheeses, marinated, stuffed or fresh produce such as olives, peppers, artichoke hearts, anchovies, and seafood like anchovies.",
+    "pred_answer": "Key ingredients in Italian cuisine include:\n\n1. Cured meats (such as ham, salami)\n2. Fresh fruits (like apples, pears, berries)\n3. Vegetables (tomatoes, peppers, artichokes)\n4. Seafood (anchovies, squid, mussels)\n5. Cheese (cheddar, parmesan, mozzarella)\n6. Meat (beef, pork, lamb)\n7. Dairy products (cream, butter, milk)\n8. Fish (salmon, cod, herring)\n9. Eggs (for baking)\n10. Olive oil and vinegar (used in many dishes)\n\nThese ingredients contribute to the richness and variety of Italian cuisine, reflecting regional traditions and availability.",
+    "type": "ingredient",
+    "difficulty": "easy",
+    "retrieved": [
+      {
+        "doc_title": "69. Northern Italy",
+        "text": "Mix of antipasti\nAntipasto, literally meaning “before meal” is the first course of any formal Italian meal throughout the country. The ingredients themselves differ between regions, based on tradition"
+      },
+      {
+        "doc_title": "69. Northern Italy",
+        "text": "# 69. Northern Italy\n\nAs noted in cuisine 37 (Southern Italy), while the South of the country is characterised by liberal use of garlic, chilli, capers, fish, olives and olive oil, the North boasts a "
+      },
+      {
+        "doc_title": "69. Northern Italy",
+        "text": "The ingredients of the true Bolognese ragù include soffritto of onion, celery, minced or chopped beef often with a little pork, wine and a very small amount of tomato, which are added roughly in that "
+      },
+      {
+        "doc_title": "69. Northern Italy",
+        "text": "Also in my mix of antipasti I included produce fairly characteristic of the north of Italy, such as fresh figs, mozzarella cheese, prosciutto di Parma (both alone and wrapped around pieces of rockmelo"
+      },
+      {
+        "doc_title": "Asian cuisine",
+        "text": "InYamal, other types of drying and preservation are common. Key ingredients in most northern Siberian cuisine include fish andcowberries, sometimes known as lingonberries in Europe and North America. "
+      }
+    ]
+  },
+  {
+    "id": "CU010",
+    "question": "How did bento become associated with carrying food outside the home in Japanese culture?",
+    "gold_answer": "It was during the Azuchi-Momoyama period, when the term ‘bento’ was used with the meaning of ‘to prepare in advance for later use,’ a meaning unique to Japan.",
+    "pred_answer": "Bento became associated with carrying food outside the home in Japanese culture due to its practice of carrying food and eating it outside the home during the Azuchi-Momoyama period. This practice originated from the idea of preparing food in advance for later use, which was seen as unique to Japan and different from the original meaning of the Chinese characters.",
+    "type": "cultural",
+    "difficulty": "hard",
+    "retrieved": [
+      {
+        "doc_title": "Bento",
+        "text": "Analyses range from a simplesemioticapproach to one that outlines the deeper ideological meanings behindbento. ## Terminology, Etymology\n\nIn Japan, it was not originally called “bento.”The practice of"
+      },
+      {
+        "doc_title": "Bento",
+        "text": "In the 1970s,Chie Nakaneused ekiben as a metaphor for group organization in Japan. By comparing this variant of bento to groups in Japan, she considered how different organizations in Japanese society"
+      },
+      {
+        "doc_title": "Bento",
+        "text": "However, even handmade bento has made a comeback, and they are once again a common, although not universal, sight at Japanese schools. Bento are still used by workers as a packed lunch, and by familie"
+      },
+      {
+        "doc_title": "Bento",
+        "text": "The word itself originates from the ChineseSong dynastyslangterm便当(便當,pinyin:biàndāng), meaning \"convenient\" or \"convenience\" (this sense is still used inWudialects such asShanghainese). When the word"
+      },
+      {
+        "doc_title": "Bento",
+        "text": "## Culture\n\nIn Japan, it is common for mothers to make bento for their children to take to school. Because making bento can take a while, some mothers will prepare the ingredients the night before, an"
+      }
+    ]
+  },
+  {
+    "id": "P001",
+    "question": "How does sake differ from beer in its fermentation process?",
+    "gold_answer": "Sake differs from beer in its fermentation process because the conversion from starch to sugar and then from sugar to alcohol occurs simultaneously during brewing.",
+    "pred_answer": "Sake differs from beer in its fermentation process due to several key differences:\n\n1. **Multiple Parallel Fermentation**: Unlike beer, which undergoes two distinct steps of conversion from starch to sugar and then to alcohol, sake uses a single vat for both processes. This allows for simultaneous conversion of starch to sugar and then to alcohol without interruption.\n\n2. **Starch Conversion**: Starch is converted into glucose through kōji-kinfungus, while glucose is converted into alcohol by yeast. This difference in how starch is processed leads to different alcohol contents and flavors.\n\n3. **Alcohol Content**: While most beers contain around 3–9% ABV, undiluted sake typically contains 18–20% ABV. However, this can be significantly reduced by dilution before bottling.\n\n4. **Temperature Control**: Beer requires controlled temperature for optimal fermentation, while sake benefits from a faster fermentation process due to its rapid starch-to-glucose conversion rate.\n\nThese differences allow",
+    "type": "procedural",
+    "difficulty": "medium",
+    "retrieved": [
+      {
+        "doc_title": "Sake",
+        "text": "This process is called Multiple Parallel Fermentation. Although similar, the brewing process for sake differs from the process for beer, in which the conversion from starch to sugar and then from suga"
+      },
+      {
+        "doc_title": "Sake",
+        "text": "The multiple parallel fermentation process of sake brewing, where starch is converted into glucose followed by immediate conversion into alcohol,is unique to it.This distinguishes sake from other brew"
+      },
+      {
+        "doc_title": "Sake",
+        "text": "This yeast is not fertile and temperature control is difficult, but it adds a sweet strawberry flavor to the sake. ## Fermentation\n\nSake fermentation is a three-step process calledsandan shikomi.The f"
+      },
+      {
+        "doc_title": "Sake",
+        "text": "## Sake yeast\n\nSakeyeastis so important in sake brewing that it is said to affect the flavor of sake more than rice. In sake brewing,kōjibreaks down rice starch into glucose, and yeast is responsible "
+      },
+      {
+        "doc_title": "List of Japanese dishes",
+        "text": "## Alcoholic beverages\n\nSake(酒) is arice winethat typically contains 12–20%alcoholand is made by a doublefermentationof rice.Kōjifungus is first used to ferment the rice starch into sugar. Regular bre"
+      }
+    ]
+  },
+  {
+    "id": "CU005",
+    "question": "What are some common fillings used in spring rolls in Southeast Asia?",
+    "gold_answer": "Common fillings used in spring rolls in Southeast Asia include vegetables such as carrots, cabbage, green beans, bamboo shoots, banana heart, and leeks. Sometimes, minced meat (such as chicken, shrimp, pork, or beef) is also included.",
+    "pred_answer": "Common fillings used in spring rolls in Southeast Asia include:\n\n1. Carrots\n2. Cabbage\n3. Green beans\n4. Bamboo shoots\n5. Banana heart\n6. Lemons\n7. Chicken\n8. Shrimp\n9. Pork\n10. Beef\n\nThese fillings add variety and texture to the savory nature of the spring rolls.",
+    "type": "cultural",
+    "difficulty": "hard",
+    "retrieved": [
+      {
+        "doc_title": "Spring roll",
+        "text": "Sometimescasteror super fine sugar is added along with the peanut powder before all the ingredients are wrapped. In Japan, spring rolls are known asharumaki(春巻き) and are often served withkarashimustar"
+      },
+      {
+        "doc_title": "Spring roll",
+        "text": "# Spring roll\n\n## Introduction\n\nSpring rollsare rolledappetizersordim sumcommonly found inChinese,Vietnamese,ThaiandSoutheast Asiancuisines. The kind of wrapper, fillings, and cooking technique used, "
+      },
+      {
+        "doc_title": "Spring roll",
+        "text": "In theNetherlandsandBelgium, spring rolls are known asloempiaand are deep-fried or sometimes baked. They are thought to have been introduced by immigrants (including Chinese) from Indonesia, a former "
+      },
+      {
+        "doc_title": "Spring roll",
+        "text": "They are deep-fried and usually served with ketchup topped with a dot of hot mustard as a dipping sauce. InArgentinaandUruguay, spring rolls are commonly known asempanaditas chinas(Chinese turnover) a"
+      },
+      {
+        "doc_title": "Spring roll",
+        "text": "InVenezuela, spring rolls are calledlumpiaas in thePhilippinesandIndonesia. Many Chinese restaurants sell them, and they are usually served withsweet and sourorsoy sauce."
+      }
+    ]
+  },
+  {
+    "id": "F014",
+    "question": "What are some of the most common ingredients used in sushi besides seafood?",
+    "gold_answer": "Some common ingredients used in sushi besides seafood include sea vegetables, such as nori (seaweed sheets), cucumber, avocado, and eels.",
+    "pred_answer": "Some of the most common ingredients used in sushi besides seafood include:\n\n1. Seafood - This includes raw fish, such as tuna, yellowtail, snapper, mackerel, and salmon.\n2. Vegetables - These can be raw or cooked and often include things like eels, unagi, prawns, octopus, shrimp, clams, and various types of shellfish.\n3. Meat - This could include anything from pork belly to beef strips.\n4. Rice - Typically made with sushi-grade rice, this is the base for the sushi roll.\n5. Nuts and seeds - These can be added for crunch or flavor.\n6. Eggs - Often used in place of meat in certain recipes.\n7. Pickled vegetables - For a tangy touch.\n8. Soy sauce and mirin - Common condiments.\n9. Wasabi and horseradish - To add a spicy kick.\n10. Pickled ginger or garlic - For a slightly sweet flavor.",
+    "type": "factual",
+    "difficulty": "medium",
+    "retrieved": [
+      {
+        "doc_title": "Sushi",
+        "text": "Commonly used fish are tuna (maguro, shiro-maguro), yellowtail (hamachi),snapper(kurodai),mackerel(saba), and salmon (sake). The most valued sushi ingredient istoro, the fatty cut of the fish.This com"
+      },
+      {
+        "doc_title": "Sushi",
+        "text": "Commonly used fish are tuna (maguro, shiro-maguro), yellowtail (hamachi),snapper(kurodai),mackerel(saba), and salmon (sake). The most valued sushi ingredient istoro, the fatty cut of the fish.This com"
+      },
+      {
+        "doc_title": "Sushi",
+        "text": "# Sushi\n\n## Introduction\n\nSushi(すし, 寿司, 鮨, 鮓;pronounced[sɯɕiꜜ]or[sɯꜜɕi])is a traditionalJapanese dishmade with vinegaredrice(鮨飯,sushi-meshi), typically seasoned withsugarandsalt, and combined with a v"
+      },
+      {
+        "doc_title": "Sushi",
+        "text": "# Sushi\n\n## Introduction\n\nSushi(すし, 寿司, 鮨, 鮓;pronounced[sɯɕiꜜ]or[sɯꜜɕi])is a traditionalJapanese dishmade with vinegaredrice(鮨飯,sushi-meshi), typically seasoned withsugarandsalt, and combined with a v"
+      },
+      {
+        "doc_title": "Sashimi",
+        "text": "Many non-Japanese use the termssashimiandsushiinterchangeably, but while they are frequently served at the same establishments, the two dishes are distinct and separate. Sushi refers to any dish made "
+      }
+    ]
+  },
+  {
+    "id": "CU011",
+    "question": "What is the historical origin of deep frying?",
+    "gold_answer": "Early records and cookbooks suggest that the practice began in certain European countries before other countries adopted the practice.",
+    "pred_answer": "The historical origin of deep frying dates back to ancient times, specifically around the 2nd millennium BC in Canaan. It was introduced into classical Greece around the 5th century BC. The technique of deep frying originated in India, particularly in the 12th century when Sanskrit texts like the Manasollasa (Bhartur Upabhogakāraṇa) mentioned snack items like malapu and vatakabeing submersed and fried in oil. Deep-fried foods spread throughout Europe by the 13th century, reaching their peak popularity in the 19th century in Western Europe.",
+    "type": "cultural",
+    "difficulty": "easy",
+    "retrieved": [
+      {
+        "doc_title": "Deep frying",
+        "text": "Deep frying is popular worldwide, with deep-fried foods accounting for a large portion of global caloric consumption. ## History\n\nThe English termdeep-friedis attested from the early 20th century. Dee"
+      },
+      {
+        "doc_title": "Deep frying",
+        "text": "# Deep frying\n\n## Introduction\n\nDeep frying(sometimes referred to asdeep fat frying) is acookingmethod in which food is submerged in hotfat, traditionallylardbut today most commonlyoil, as opposed to "
+      },
+      {
+        "doc_title": "Korean fried chicken",
+        "text": "## History\n\nThe recipe for frying chicken was already a form of cooking in the 15th century,so it is presumed that it has been cooked since theGoryeoperiod.The fried chicken under the name of \"Pogye\" "
+      },
+      {
+        "doc_title": "Deep frying",
+        "text": "## Dishes, foods, and culture\n\nDeep-fried foods are common in many countries, and have also been described as \"a staple of almost allstreet cuisineson all continents\".There are hundreds of dishes that"
+      },
+      {
+        "doc_title": "Wok",
+        "text": "# Wok\n\n## Introduction\n\nAwok(simplified Chinese:镬;traditional Chinese:鑊;pinyin:huò;Cantonese Yale:wohk) is a deep round-bottomedcooking panofChineseorigin. It is believed to be derived from theSouth A"
+      }
+    ]
+  },
+  {
+    "id": "F011",
+    "question": "How did Beijing cuisine influence other Chinese cuisines?",
+    "gold_answer": "Beijing cuisine has itself, in turn, also greatly influenced other Chinese cuisines, particularly the cuisine of Liaoning, the Chinese imperial cuisine, and the Chinese aristocrat cuisine.",
+    "pred_answer": "Beijing cuisine had a significant impact on other Chinese cuisines, particularly those originating from the eastern coastal provinces of Shandong. The influence was profound, influencing various aspects of Chinese cuisine:\n\n1. **Style Influence**: Bejing cuisine significantly influenced the style of other Chinese cuisines, especially those originating from Shandong Province. This was evident in terms of the types of foods that were popularized and how they were prepared.\n\n2. **Regional Adaptations**: Many dishes developed in Beijing have become popular worldwide due to their adaptability to local tastes and ingredients. For example, sweet and sour chicken became a global hit, while Manchurian chicken gained popularity in India and South Korea.\n\n3. **Internationalization**: The fusion of Chinese and Western cuisines led to the creation of new international cuisines like Ramen (Japan), Manchurian Chicken (Indonesia), Sausage (South Korea), and Hamburger (United States).\n\n4. **Diverse Cuisine**: Beyond just",
+    "type": "factual",
+    "difficulty": "hard",
+    "retrieved": [
+      {
+        "doc_title": "Beijing cuisine",
+        "text": "# Beijing cuisine\n\n## Introduction\n\nBeijing cuisine, also known asJing cuisine,Mandarin cuisineandPeking cuisineand formerly asBeiping cuisine, is the local cuisine ofBeijing, the national capital of "
+      },
+      {
+        "doc_title": "Chinese cuisine",
+        "text": "A small shot of fruit vinegar is served as an appetizer inShanxi. Nai laoor Beijing yogurt is a drinkable yogurt traditional to northern China. ## Outside China\n\nWhere there are historical immigrant C"
+      },
+      {
+        "doc_title": "Chinese cuisine",
+        "text": "# Chinese cuisine\n\n## Introduction\n\nChinese cuisinecomprisescuisinesoriginating fromChina, as well as fromChinese people from other parts of the world. Because of the Chinese diaspora and the historic"
+      },
+      {
+        "doc_title": "Beijing cuisine",
+        "text": "It was during this period when Beijing cuisine gained fame and became recognised by the Chinese culinary society, and the stratification of the foodservice was one of its most obvious characteristics "
+      },
+      {
+        "doc_title": "Beijing cuisine",
+        "text": "There is emphasis on dark soy paste, sesame paste, sesame oil and scallions, andfermented tofuis often served as a condiment. In terms of cooking techniques, methods relating to different ways of fryi"
+      }
+    ]
+  },
+  {
+    "id": "P024",
+    "question": "What spices are typically used in Fried Rice?",
+    "gold_answer": "The key spices used in Fried Rice include black pepper, chili pepper, and fried rice spice.",
+    "pred_answer": "The main spices commonly used in Fried Rice are:\n\n1. Black pepper\n2. Chili pepper\n3. Soy sauce\n4. Oyster sauce\n5. Sesame oil\n6. Salt\n7. Katsuobushi (dried and flaked tuna product)\n\nThese spices are often combined with various ingredients to create different flavors and textures in Fried Rice dishes.",
+    "type": "procedural",
+    "difficulty": "hard",
+    "retrieved": [
+      {
+        "doc_title": "Fried rice",
+        "text": "Aromatics such asonions,shallots,scallions,leeks, ginger andgarlicare often added for extra flavor.Cooking oilssuch asvegetable oil,sesame oil,clarified butter, orlardcan be used to grease thewokorfry"
+      },
+      {
+        "doc_title": "Chahan (dish)",
+        "text": "InChinese, fried rice is calledchǎofàn(炒飯); these sameChinese charactershave aJapanese readingofchāhan. ## Preparation\n\nChahanis a Japanese fried rice dish typically cooked in a wok.Rice is used as a "
+      },
+      {
+        "doc_title": "Cookbook:Fried Rice",
+        "text": "# Cookbook:Fried Rice\n\n## Introduction\n\nCookbook|Recipes|Ingredients|Equipment|Techniques|Cookbook Disambiguation Pages|Recipes|Rice Recipes\nFried riceis a simple dish that is easily modified and can "
+      },
+      {
+        "doc_title": "Fried rice",
+        "text": "## Africa\n\nGhanaian fried rice is one of the more contemporary dishes and can be found in almost every Ghanaian restaurant. It is usually made with Jasmine rice, long grain, or basmati rice. The rice "
+      },
+      {
+        "doc_title": "Fried rice",
+        "text": "Dominican fried rice is known aschofán. The dish is made with leftover rice, celery, garlic, bell peppers, red onion, carrots, peas, and soy sauce sautéed in vegetable oil. Protein such as ham, chicke"
+      }
+    ]
+  },
+  {
+    "id": "P011",
+    "question": "What traditional influences have shaped Beijing cuisine?",
+    "gold_answer": "Beijing cuisine has itself, in turn, also greatly influenced other Chinese cuisines, particularly the cuisine of Liaoning, the Chinese imperial cuisine, and the Chinese aristocrat cuisine.",
+    "pred_answer": "Traditional influences that have shaped Beijing cuisine include:\n\n1. Eastern coastal province of Shandong, which influenced the style of cooking.\n2. The Imperial Cuisine of the Forbidden City, which was influenced by this region.\n3. The Chinese imperial cuisine that originated from the \"Emperor's Kitchen,\" which was influenced by this region.\n4. The deep Chinese influence on other national cuisines like Cambodian, Filipino, Singaporean, Thai, Vietnamese, Korean, and American Chinese cuisines.\n5. The influence of immigrant Chinese populations on the evolution of these cuisines.\n6. The introduction of sweet and sour sauce into various cuisines, especially in Southeast Asia and South Korea.\n7. The development of specific dishes like ramen and hōtsu in Japan, which were influenced by Chinese immigrants.\n8. The creation of unique dishes like the St. Paul sandwich in the United States, bakmi ayam in Indonesia, pancit canton in the Philippines, and hủ tiếu in",
+    "type": "procedural",
+    "difficulty": "hard",
+    "retrieved": [
+      {
+        "doc_title": "Beijing cuisine",
+        "text": "# Beijing cuisine\n\n## Introduction\n\nBeijing cuisine, also known asJing cuisine,Mandarin cuisineandPeking cuisineand formerly asBeiping cuisine, is the local cuisine ofBeijing, the national capital of "
+      },
+      {
+        "doc_title": "Chinese cuisine",
+        "text": "A small shot of fruit vinegar is served as an appetizer inShanxi. Nai laoor Beijing yogurt is a drinkable yogurt traditional to northern China. ## Outside China\n\nWhere there are historical immigrant C"
+      },
+      {
+        "doc_title": "Beijing cuisine",
+        "text": "There is emphasis on dark soy paste, sesame paste, sesame oil and scallions, andfermented tofuis often served as a condiment. In terms of cooking techniques, methods relating to different ways of fryi"
+      },
+      {
+        "doc_title": "Beijing cuisine",
+        "text": "## Restaurants known for Beijing cuisine\n\nNumerous traditional restaurants in Beijing are credited with great contributions in the formation of Beijing cuisine, but many of them have gone out of busin"
+      },
+      {
+        "doc_title": "Shandong cuisine",
+        "text": "About food, he recommended: \"Do not consume food which looks spoiled, smells spoiled, is out of season, is improperly butchered, or is not made with its proper seasoning\". The cuisine as it is known t"
+      }
+    ]
+  },
+  {
+    "id": "CU024",
+    "question": "How did Finnish people adapt to their new surroundings after the Finnish war?",
+    "gold_answer": "Finnish people were relegated to peasants and slaves, with the upper class of the country speaking Swedish.",
+    "pred_answer": "After the Finnish war, Finnish people adapted to their new surroundings through several strategies:\n\n1. Localization: They retained their native languages, particularly Swedish, while adopting Finnish customs and practices.\n2. Cultural exchange: They embraced elements from other cultures, integrating them into their own cultural fabric.\n3. Adaptation of food: They preserved traditional dishes and prepared them according to local ingredients, making use of cheaper resources.\n4. Preservation methods: They used techniques like pickling to preserve foods, ensuring they remained fresh throughout the winter months.\n5. Economic stability: Despite external influences, Finnish society maintained economic stability due to its strong economy and relatively stable political environment.",
+    "type": "cultural",
+    "difficulty": "hard",
+    "retrieved": [
+      {
+        "doc_title": "77. Finland",
+        "text": "# 77. Finland\n\nFinland was part of the Swedish kingdom from the middle ages until periods of instability in the 18th century, ending with the Finnish war in 1809 when it became a Grand Duchy of Russia"
+      },
+      {
+        "doc_title": "77. Finland",
+        "text": "The infamous comments of two high-profile figures in Europe, Jacques Chirac and Silvio Berlusconi, that Finnish cuisine is one of the worst in the world, is therefore especially insensitive to the lon"
+      },
+      {
+        "doc_title": "77. Finland",
+        "text": "One of the most important non-culinary Christmas traditions in Finland is to partake in saunas, an activity that is hugely popular all year round, but especially in the holiday season. My Finnish Chri"
+      },
+      {
+        "doc_title": "77. Finland",
+        "text": "As meat has only become frequently available to the average Finnish family in modern times, this dish was traditionally made for special occasions, especially during Easter celebrations. I am fully on"
+      },
+      {
+        "doc_title": "77. Finland",
+        "text": "Lohikeitto\nIn Finnish “lohi” means salmon and “keitto” means soup, so no prizes for guessing what this dish comprises. Lohikeitto is a classic example of the kind of fare you might find during the col"
+      }
+    ]
+  },
+  {
+    "id": "F001",
+    "question": "What is the historical background of Beijing cuisine?",
+    "gold_answer": "As Beijing has been the capital of China for centuries, its cuisine is influenced by culinary traditions from all over China, but the style that has the greatest influence on Beijing cuisine is that of the eastern coastal province of Shandong.",
+    "pred_answer": "The historical background of Beijing cuisine is rooted in the cultural influences of Shandong Province, particularly the imperial kitchens of the Ming Dynasty. This region played a crucial role in shaping Beijing's culinary identity through its contributions to Huaiyang cuisine, which later evolved into the more widely recognized Peking cuisine. Additionally, the introduction of Chinese Islamic cuisine during the Yuan Dynasty further enriched Beijing's culinary landscape.",
+    "type": "factual",
+    "difficulty": "easy",
+    "retrieved": [
+      {
+        "doc_title": "Beijing cuisine",
+        "text": "# Beijing cuisine\n\n## Introduction\n\nBeijing cuisine, also known asJing cuisine,Mandarin cuisineandPeking cuisineand formerly asBeiping cuisine, is the local cuisine ofBeijing, the national capital of "
+      },
+      {
+        "doc_title": "Beijing cuisine",
+        "text": "It was during this period when Beijing cuisine gained fame and became recognised by the Chinese culinary society, and the stratification of the foodservice was one of its most obvious characteristics "
+      },
+      {
+        "doc_title": "Beijing cuisine",
+        "text": "There is emphasis on dark soy paste, sesame paste, sesame oil and scallions, andfermented tofuis often served as a condiment. In terms of cooking techniques, methods relating to different ways of fryi"
+      },
+      {
+        "doc_title": "Beijing cuisine",
+        "text": "Meals previously offered to nobles and aristocrats were made available to anyone who could afford them instead of being restricted only to the upper class. As chefs freely switched between jobs offere"
+      },
+      {
+        "doc_title": "History of Chinese cuisine",
+        "text": "During this time there was little to no advancement in the culinary tradition. Many fled to neighbouring Hong Kong and Taiwan to avoid starvation. In Beijing in the 1990s, a Communist-style cuisine, w"
+      }
+    ]
+  },
+  {
+    "id": "CU006",
+    "question": "When did teokbokki first appear in literature?",
+    "gold_answer": "In Siŭijŏnsŏ, a 19th-century cookbook, the dish was listed using the archaic spelling 'steokbokgi' (hiragana: ṭepyōji).",
+    "pred_answer": "Based on the given context, teokbokki first appears in literature in Siŭijŏnsŏ, a 19th-century cookbook.",
+    "type": "cultural",
+    "difficulty": "hard",
+    "retrieved": [
+      {
+        "doc_title": "Tteokbokki",
+        "text": "It is also a popular home dish, as thegarae-tteokcan be purchased in pre-packaged, semi-dehydrated form. ## History\n\nThe first record oftteokbokkiappears inSiŭijŏnsŏ, a 19th-century cookbook, where th"
+      },
+      {
+        "doc_title": "Tteokbokki",
+        "text": "There are also many variations ingochujang tteokbokki, such as a version that is seasoned withperillaleaf. Sweet and savory, brown soy sauce–basedtteokbokkiis often referred to asgungjung-tteokbokki(궁"
+      },
+      {
+        "doc_title": "Edamame",
+        "text": "Centuries later, in China, in 1620, they are referred to again, but asmaodou, which translates to the term \"hairy bean\". Edamame appeared inhaikaiverse in Japanese in theEdo period(1603–1868), with on"
+      },
+      {
+        "doc_title": "Tteokbokki",
+        "text": "# Tteokbokki\n\n## Introduction\n\nTteokbokki(English:/ˈtʌkbɒki,ˈtʌkboʊki/TUK-bok-ee,TUK-boh-kee;Korean:떡볶이,pronounced[t͈ʌk̚p͈ok͈i]) orsimmered rice cake, is aKorean foodmade from small-sizedgarae-tteok(l"
+      },
+      {
+        "doc_title": "Wok",
+        "text": "Since the same sort of pan is universal in India and Southeast Asia, where it is known as a Kuali in several languages, I strongly suspect borrowing [of the word] (probably from India via Central Asia"
+      }
+    ]
+  },
+  {
+    "id": "CU020",
+    "question": "Which ingredients are typically used for Fried Rice?",
+    "gold_answer": "The ingredients used for Fried Rice include cooked rice, bean sprouts, kidney beans, aromatics such as onion, shallot, scallion, garlic, black pepper, chili pepper, fried rice spice, char siu (Chinese barbecue pork), marinated beef, seafood, and additional spices such as curry powder.",
+    "pred_answer": "The ingredients typically used for Fried Rice are:\n\n- Cooked rice (leftover rice that has been left refrigerated works well)\n- Bean sprouts\n- Kidney beans\n- Aromatics (e.g., onion, shallot, scallion, garlic)\n- Soy sauce\n- Tofu\n- Bean sprouts\n- Onion\n- Garlic\n- Egg\n- Vegetable (not specified in the given text)",
+    "type": "cultural",
+    "difficulty": "hard",
+    "retrieved": [
+      {
+        "doc_title": "Chahan (dish)",
+        "text": "InChinese, fried rice is calledchǎofàn(炒飯); these sameChinese charactershave aJapanese readingofchāhan. ## Preparation\n\nChahanis a Japanese fried rice dish typically cooked in a wok.Rice is used as a "
+      },
+      {
+        "doc_title": "Fried rice",
+        "text": "# Fried rice\n\n## Introduction\n\nFried riceis a dish ofcooked ricethat has beenstir-friedin awokor afrying panand is usually mixed with other ingredients such aseggs,vegetables,seafood, ormeat. It is of"
+      },
+      {
+        "doc_title": "Cookbook:Fried Rice",
+        "text": "# Cookbook:Fried Rice\n\n## Introduction\n\nCookbook|Recipes|Ingredients|Equipment|Techniques|Cookbook Disambiguation Pages|Recipes|Rice Recipes\nFried riceis a simple dish that is easily modified and can "
+      },
+      {
+        "doc_title": "Fried rice",
+        "text": "Aromatics such asonions,shallots,scallions,leeks, ginger andgarlicare often added for extra flavor.Cooking oilssuch asvegetable oil,sesame oil,clarified butter, orlardcan be used to grease thewokorfry"
+      },
+      {
+        "doc_title": "Cookbook:Fried Rice",
+        "text": "Add the soy sauce, meat(s), eggs, and all vegetables except the onions and bean sprouts. Add pepper, a pinch or two of sugar, and optionally some added salt. Add the tofu, bean sprouts, and onion when"
+      }
+    ]
+  },
+  {
+    "id": "CU029",
+    "question": "What is the typical texture of callaloo soup?",
+    "gold_answer": "The thickness and chunkiness of the soup is entirely determined by the preference of the cook, and can be made to match the desired accompaniment.",
+    "pred_answer": "The typical texture of callaloo soup is runny soup-like consistency.",
+    "type": "cultural",
+    "difficulty": "hard",
+    "retrieved": [
+      {
+        "doc_title": "67. The Caribbean: Lesser Antilles",
+        "text": "Crab and callaloo\n“Callaloo” is popular all over the Caribbean, and is a lose term describing any sort of stewed indigenous leaf vegetable (amaranth, taro lead or xanthosome being a few examples), eac"
+      },
+      {
+        "doc_title": "61. The Caribbean: Greater Antilles",
+        "text": "Finally, I cooked callaloo, the concept of which was brought over with the slave trade with inspiration from dishes such as Palaver sauce in West Africa. The dish is made with stewed leafy green veget"
+      },
+      {
+        "doc_title": "Miso soup",
+        "text": "Thusnegiandtofu, a strongly flavored ingredient mixed with a mildly flavored ingredient, are often combined. Ingredients that float, such aswakameseaweed, and ingredients that sink, such as potatoes, "
+      },
+      {
+        "doc_title": "Miso soup",
+        "text": "It can be categorized as red (akamiso), white (shiromiso), or mixed (awase).There are many variations, including regional variations such asShinshūmiso orSendai miso. The fermentation time affects the"
+      },
+      {
+        "doc_title": "69. Northern Italy",
+        "text": "I also made minestrone, which is a hearty vegetable soup that often has pasta or rice added. It’s the typical meal that uses up any extraneous ingredients you might have in the fridge, which could inc"
+      }
+    ]
+  },
+  {
+    "id": "F018",
+    "question": "Why is kimchi often referred to as 'seasonal'?",
+    "gold_answer": "Because kimchi is typically produced in response to traditional practices and the availability of certain ingredients.",
+    "pred_answer": "Kimchi is often referred to as \"seasonal\" because it's traditionally made at different times of the year, depending on what vegetables are available locally. This allows farmers and food producers to adjust their production to meet local needs throughout the year.",
+    "type": "factual",
+    "difficulty": "medium",
+    "retrieved": [
+      {
+        "doc_title": "Kimchi",
+        "text": "## Region\n\nThe following regional classification dates to the 1960s. Since then, kimchi-making practices and trends in Korea have diverged from it. ## Seasonal variations\n\nDifferent types of kimchi we"
+      },
+      {
+        "doc_title": "Cookbook:Kimchi",
+        "text": "# Cookbook:Kimchi\n\n## Introduction\n\nCookbook|Recipes|Ingredients|Equipment|Techniques|Cookbook Disambiguation Pages|Ingredients\nKimchiis a class of Koreanfermentedor pickled vegetables. ## Characteris"
+      },
+      {
+        "doc_title": "71. Korea",
+        "text": "To the fermenting mixture is added flavourings such as gochugaru (chilli powder), garlic, ginger, scallions, and often some sort of salted seafood, such as anchovies. Every household will have its pre"
+      },
+      {
+        "doc_title": "Kimchi",
+        "text": "# Kimchi\n\n## Introduction\n\nKimchi(/ˈkɪmtʃi/;Korean:김치;RR:gimchi;pronounced[kim.tɕʰi]), also written askimchee, is a traditional Korean side dish (banchan) consisting of salted andfermentedvegetables, "
+      },
+      {
+        "doc_title": "Kimchi",
+        "text": "## Odor\n\nKimchi is known for its strong, spicy, flavors and odors, although milder varieties exist. Variations in the fermentation process cause the final product to be highly variable in terms of qua"
+      }
+    ]
+  },
+  {
+    "id": "F017",
+    "question": "When did sushi become associated with raw fish?",
+    "gold_answer": "Around the 14th and 16th centuries, rice vinegar started to be added to the rice to help speed up the process.",
+    "pred_answer": "Sushi became associated with raw fish around the 15th century. The advance and development during this period shortened the fermentation time for sushi to about one to two weeks. This allowed sushi to become popular both as a main meal and as a snack food, combining fish with rice.",
+    "type": "factual",
+    "difficulty": "hard",
+    "retrieved": [
+      {
+        "doc_title": "Cookbook:Sushi",
+        "text": "Sometime between the 14th and 16th centuries, rice vinegar started to be added to the rice to help speed up the process which took several months. Around this time the rice also started to be consumed"
+      },
+      {
+        "doc_title": "Sashimi",
+        "text": "Many non-Japanese use the termssashimiandsushiinterchangeably, but while they are frequently served at the same establishments, the two dishes are distinct and separate. Sushi refers to any dish made "
+      },
+      {
+        "doc_title": "Japanese cuisine",
+        "text": "Preserving fish became a sensation andsushioriginated as a means of preserving fish by fermenting it in boiled rice. Fish that are salted and then placed in rice are preserved bylactic acid fermentati"
+      },
+      {
+        "doc_title": "Japanese cuisine",
+        "text": "Preserving fish became a sensation andsushioriginated as a means of preserving fish by fermenting it in boiled rice. Fish that are salted and then placed in rice are preserved bylactic acid fermentati"
+      },
+      {
+        "doc_title": "Cookbook:Sushi",
+        "text": "# Cookbook:Sushi\n\n## Introduction\n\nCookbook|Recipes|Ingredients|Equipment|Techniques|Cookbook Disambiguation Pages\nIn Japanese cuisine,sushi(寿司, 鮨, 鮓) is vinegar-seasoned rice, usually topped with a v"
+      }
+    ]
+  }
+]
