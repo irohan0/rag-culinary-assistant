@@ -140,25 +140,34 @@ def answer_relevance_metric(questions, predictions, embedder):
 # RAG-specific metrics
 # ─────────────────────────────────────────────────────────────────────────────
 
-def faithfulness_metric(outputs, threshold=0.25):
-    """
-    Token-level recall of answer words that appear in retrieved context.
-    High faithfulness = answer is grounded in retrieved evidence.
-    Low faithfulness  = model is hallucinating.
-    """
+def compute_faithfulness_final(outputs, chunk_lookup, threshold=0.40):
     scores = []
-    for output in outputs:
-        pred_words    = _normalise_set(output.get("pred_answer", ""))
-        context_words = set()
-        for chunk in output.get("retrieved", []):
-            context_words.update(_normalise_set(chunk.get("text", "")))
-        if not pred_words or not context_words:
+    for o in outputs:
+        pred_content    = content_words(o.get("pred_answer", ""))
+        context_content = set()
+
+        for chunk in o.get("retrieved", []):
+            # Look up full text by chunk_id — no truncation
+            cid       = chunk.get("chunk_id", "")
+            full_text = chunk_lookup.get(cid, "")
+
+            # Fallback: if chunk_id not found, use whatever text is stored
+            if not full_text:
+                full_text = chunk.get("text", "")
+
+            context_content.update(content_words(full_text))
+
+        if not pred_content or not context_content:
             scores.append(0.0)
             continue
-        scores.append(len(pred_words & context_words) / len(pred_words))
 
-    faith_rate = sum(1 for s in scores if s >= threshold) / max(len(scores), 1)
-    return scores, float(np.mean(scores)), float(faith_rate)
+        overlap = pred_content & context_content
+        scores.append(len(overlap) / len(pred_content))
+
+    mean_faith  = float(np.mean(scores))
+    hall_rate   = float(sum(1 for s in scores if s < threshold) / max(len(scores), 1))
+    hall_scores = [1.0 - s for s in scores]
+    return scores, mean_faith, hall_rate, hall_scores
 
 
 def context_precision_metric(outputs, source_lookup):
