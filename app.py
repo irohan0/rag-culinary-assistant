@@ -231,47 +231,58 @@ def compare_all(question):
            box(results["chain_of_thought"]), box(results["structured"])
 
 
-def batch_inference(file_obj):
+def batch_inference(file_obj, strategy):
     if file_obj is None:
         return "Please upload an input JSON file.", None
     try:
         with open(file_obj.name, encoding="utf-8") as f:
             data = json.load(f)
+
         queries = parse_input(data)
         if not queries:
             return "No questions found in the file. Check the format.", None
-        log     = [f"Detected {len(queries)} questions\n"]
-        outputs = []
+
+        strat_label = strategy.replace("_", " ").title()
+        log         = [f"Detected {len(queries)} questions  ·  Strategy: {strat_label}\n"]
+        outputs     = []
+
         for i, item in enumerate(queries, 1):
             question = item.get("question", "").strip()
             qid      = item.get("id", f"Q{i:03d}")
+
             if not question:
                 log.append(f"[{i:02d}/{len(queries)}] SKIP — empty question")
                 continue
+
             retrieved = retriever_.retrieve(question, initial_k=20, final_k=5)
             context   = build_context(retrieved, max_words=600)
             answer    = generator_.generate(
                 query=question, context=context,
-                strategy="structured", max_new_tokens=200, temperature=0.3,
+                strategy=strategy,
+                max_new_tokens=200, temperature=0.3,
             )
             outputs.append({"id": qid, "answer": answer})
-            log.append(f"[{i:02d}/{len(queries)}] {question[:65]}")
+            log.append(f"[{i:02d}/{len(queries)}] [{strat_label}] {question[:55]}")
+
         payload = {
             "generated_at": datetime.now().isoformat(),
             "model":        "Qwen/Qwen2.5-0.5B-Instruct",
             "retrieval":    "hybrid_bm25_dense_rrf_crossencoder_rerank",
+            "strategy":     strategy,
             "outputs":      outputs,
         }
+
         os.makedirs(os.path.join(BASE_DIR, "outputs"), exist_ok=True)
         out_path = os.path.join(BASE_DIR, "outputs", "output_payload.json")
         with open(out_path, "w", encoding="utf-8") as f:
             json.dump(payload, f, ensure_ascii=False, indent=2)
-        log.append(f"\nDone — {len(outputs)} answers saved.")
+
+        log.append(f"\nDone — {len(outputs)} answers saved  ·  Strategy: {strat_label}")
         return "\n".join(log), out_path
+
     except Exception as e:
         import traceback
         return f"Error: {type(e).__name__}: {e}\n\n{traceback.format_exc()}", None
-
 
 # ── Load metadata ─────────────────────────────────────────────────────────────
 try:
@@ -335,7 +346,7 @@ with gr.Blocks(css=CSS, title="RAG Culinary Assistant") as demo:
                     with gr.Row():
                         strategy_dd = gr.Dropdown(
                             choices=[
-                                ("Structured (recommended)", "structured"),
+                                ("Structured", "structured"),
                                 ("Zero-shot",               "zero_shot"),
                                 ("Few-shot",                "few_shot"),
                                 ("Chain-of-thought",        "chain_of_thought"),
@@ -400,6 +411,7 @@ with gr.Blocks(css=CSS, title="RAG Culinary Assistant") as demo:
                                 outputs=[zs_out, fs_out, cot_out, str_out])
 
         # ── Tab 3: Batch ──────────────────────────────────────────────────────
+        # ── Tab 3: Batch ──────────────────────────────────────────────────────
         with gr.Tab("📂  Batch Inference"):
             gr.HTML("""
             <div style="color:#94a3b8;margin-bottom:16px;">
@@ -411,14 +423,24 @@ with gr.Blocks(css=CSS, title="RAG Culinary Assistant") as demo:
             </div>""")
             with gr.Row():
                 with gr.Column():
-                    file_in   = gr.File(label="Upload input JSON", file_types=[".json"])
+                    file_in        = gr.File(label="Upload input JSON", file_types=[".json"])
+                    batch_strategy = gr.Dropdown(
+                        choices=[
+                            ("Structured", "structured"),
+                            ("Zero-shot",               "zero_shot"),
+                            ("Few-shot",                "few_shot"),
+                            ("Chain-of-thought",        "chain_of_thought"),
+                        ],
+                        value="structured",
+                        label="Prompting strategy",
+                    )
                     batch_btn = gr.Button("⚡  Run batch inference", variant="primary")
                 with gr.Column():
                     batch_log = gr.Textbox(label="Progress log", lines=14, interactive=False)
                     file_out  = gr.File(label="Download output_payload.json")
-            batch_btn.click(fn=batch_inference, inputs=[file_in],
+            batch_btn.click(fn=batch_inference, inputs=[file_in, batch_strategy],
                             outputs=[batch_log, file_out])
-
+    
         # ── Tab 4: Results & Ablation ─────────────────────────────────────────
         with gr.Tab("📊  Results & Ablation"):
             gr.HTML(f"""
@@ -442,7 +464,7 @@ with gr.Blocks(css=CSS, title="RAG Culinary Assistant") as demo:
                   {trow("METEOR",             "0.2184", "0.3206")}
                   {trow("Answer F1",          "0.1853", "0.3379")}
                   {trow("Answer Correctness", "0.8141", "0.8398")}
-                  {trow("Faithfulness",       "0.000",  "0.6547")}
+                  {trow("Faithfulness",       "0.1137",  "0.6547")}
                   {trow("Hallucination %",    "100%",   "10.9%")}
                 </table>
                 <div style="color:#64748b;font-size:0.7rem;margin-top:8px;">

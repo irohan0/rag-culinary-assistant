@@ -1,47 +1,28 @@
 {
-  "generated_at": "2026-03-27T08:14:14.347653",
+  "generated_at": "2026-04-23T22:58:15.406948",
   "model": "Qwen/Qwen2.5-0.5B-Instruct",
   "retrieval": "hybrid_bm25_dense_rrf_crossencoder_rerank",
+  "strategy": "few_shot",
   "outputs": [
     {
       "id": "Q001",
-      "answer": "The main ingredient in miso soup is negi."
+      "answer": "According to the information provided, South Korean households consume approximately 18 kilograms (40 pounds) of kimchi per person annually."
     },
     {
       "id": "Q002",
-      "answer": "Kimchi is made by fermenting vegetables, typically baechu(napa cabbage) or Korean radish, in a brine containing ginger, garlic, green onion, and chili pepper."
+      "answer": "The Japanese term 'nuuhara' means 'noodle harassment'."
     },
     {
       "id": "Q003",
-      "answer": "Sichuan cuisine is spicy because it features a combination of Sichuan pepper and chili pepper, which gives it its characteristic numbing and spicy flavor."
+      "answer": "During the latter Goryeo period, the Mongols invaded Goryeo in the 13th century, introducing new foods and dishes that have their roots in this period. These included dumplings, grilled meat dishes, noodle dishes, and the use of seasonings such as black pepper, chili, and garlic."
     },
     {
       "id": "Q004",
-      "answer": "Peking duck is prepared by first slaughtering ducks after 65 days of slaughter and seasoning them before roasting in a closed or hung oven. The meat is often eaten with spring onion, cucumber, and sweet bean sauce, with pancakes rolled around the filling."
+      "answer": "The liquid ingredients used to braise quail eggs in jangjorim include black tea, soy sauce, rice wine, Szechuan peppercorns, and sweet spices like star anise, cloves, and cinnamon."
     },
     {
       "id": "Q005",
-      "answer": "Udon noodles are typically thicker and colder than soba noodles, often served in cold broth."
-    },
-    {
-      "id": "Q006",
-      "answer": "Common vegetables include julienned o-cucumber, aehobak courgette/zucchini, morrison radish, mushrooms, doraji bellflower root, gim, spinach, soybean sprouts, and gosari bracken fern stems."
-    },
-    {
-      "id": "Q007",
-      "answer": "Hot pot differs from shabu-shabu in its use of thinly sliced meat and vegetables boiled in water and served with dipping sauces."
-    },
-    {
-      "id": "Q008",
-      "answer": "Wagyu beef is a type of beef that is produced from Japanese native cattle that have been bred over many generations. It is known for having a high degree of marbling, which means there are streaks of fat within the meat that makes it tender and juicy. The marbling also contributes to the flavor of the beef. Wagyu beef is typically sold in areas where it is shipped with an area name."
-    },
-    {
-      "id": "Q009",
-      "answer": "Kimchi plays a significant role in Korean culture, serving as a staple food throughout the country. It is deeply ingrained in Korean traditions, particularly in winter, where it is consumed in large quantities. The practice of storing kimchi in earthenware vessels, known as ongeog, dates back centuries. The preservation technique involves fermenting vegetables, which helps to maintain their freshness and flavor. Kimchi is also associated with the concept of community and cooperation, as evidenced by the fact that it is shared among villagers during festivals. Additionally, kimchi has historical significance, as it was used by South Korean astronauts during a mission to the International Space Station, highlighting its importance in preserving food during challenging times."
-    },
-    {
-      "id": "Q010",
-      "answer": "Tofu is made by grinding raw peanuts into a smooth paste, combining it with liquid and kudzu starch, and heating it until it curds."
+      "answer": "Mochitso flour, which is mixed with water and cooked on a stove or in the microwave until it forms a sticky, opaque, white mass."
     }
   ]
 }

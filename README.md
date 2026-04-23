@@ -22,6 +22,9 @@ This project implements a complete **end-to-end RAG pipeline** for a culinary qu
 
 Rather than using off-the-shelf RAG frameworks like LangChain or LlamaIndex, every component was **designed, implemented, and evaluated from scratch** — demonstrating deep understanding of how modern NLP systems work under the hood.
 
+## Project Link - 
+[![GitHub](https://img.shields.io/badge/GitHub-irohan0-black?style=flat&logo=github)](https://github.com/irohan0/rag-culinary-assistant)
+
 ### What makes this project stand out
 
 - **No RAG framework used** — every component built from first principles
@@ -51,7 +54,7 @@ Rather than using off-the-shelf RAG frameworks like LangChain or LlamaIndex, eve
 | METEOR | 0.2184 | **0.3206** | +46.8% | p < 0.001 |
 | Answer F1 | 0.1853 | **0.3379** | +82.4% | p < 0.001 |
 | Answer Correctness | 0.8141 | **0.8398** | +3.2% | p < 0.001 |
-| Faithfulness† | 0.000 | **0.6547** | — | p < 0.001 |
+| Faithfulness† | 0.1137 | **0.6547** | — | p < 0.001 |
 | Hallucination Rate† | 100% | **10.9%** | -89.1pp | p < 0.001 |
 
 > † Faithfulness computed as content-word overlap (stopwords removed) with full retrieved chunk text via chunk_id lookup, threshold = 0.40. Hallucination rate = fraction of answers below threshold.
@@ -404,12 +407,22 @@ rag-culinary-assistant/
 
 ---
 
-## Author
+## Authors
 
-**Rohan Inamdar** — MSc Data Science, University of Manchester
+**1. Rohan Inamdar** — MSc Data Science, University of Manchester
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/rohan-inamdar-47aa4b251/)
 [![GitHub](https://img.shields.io/badge/GitHub-irohan0-black?style=flat&logo=github)](https://github.com/irohan0)
+
+**2. Kavin Sundarr** — MSc Data Science, University of Manchester
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/s-kavin-sundarr-333450238/)
+[![GitHub](https://img.shields.io/badge/GitHub-irohan0-black?style=flat&logo=github)](https://github.com/KavinSundarr)
+
+**3. Deepen Khandelwal** — MSc Data Science, University of Manchester
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/deepen-khandelwal-49396b251/)
+[![GitHub](https://img.shields.io/badge/GitHub-irohan0-black?style=flat&logo=github)](https://github.com/Deepen-cyph)
 
 ---
 
