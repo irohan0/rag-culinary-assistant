@@ -30,7 +30,6 @@ data/processed/
 !data/raw/corpus_manifest.json
 
 # Output files
-outputs/train_outputs.json
 outputs/evaluation/
 output_payload.json
 
